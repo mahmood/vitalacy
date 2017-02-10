@@ -1,9 +1,5 @@
 <?php
 
-/**
- * ReduxFramework Barebones Sample Config File
- * For full documentation, please visit: http://docs.reduxframework.com/
- */
 
 if ( ! class_exists( 'Redux' ) ) {
 	return;
@@ -11,12 +7,6 @@ if ( ! class_exists( 'Redux' ) ) {
 
 // This is your option name where all the Redux data is stored.
 $opt_name = "config";
-
-/**
- * ---> SET ARGUMENTS
- * All the possible arguments for Redux.
- * For full documentation on arguments, please refer to: https://github.com/ReduxFramework/ReduxFramework/wiki/Arguments
- * */
 
 $theme = wp_get_theme(); // For use with some settings. Not necessary.
 
@@ -540,13 +530,62 @@ Redux::setSection( $opt_name, array(
         ),
         array(
             'id'         => 'ceo-name',
-            'type'       => 'Textarea',
+            'type'       => 'Text',
             'section_id' => 'ceo-name',
             'title'      => 'CEO Name',
             'default'    => 'Dr. Bahram Nour-Omid, CEO'
         ),
     )
 ) );
+
+Redux::setSection( $opt_name, array(
+    'title' => __( 'Contact', 'redux-framework-demo' ),
+    'id'    => 'contact',
+    'desc'  => __( 'Contact section', 'redux-framework-demo' ),
+    'icon'  => 'el el-phone',
+    'subsection' => true,
+    'fields' => array (
+        array(
+            'id'       => 'contact-is-active',
+            'type'     => 'switch',
+            'title'    => __('Active', 'redux-framework-demo'),
+            'subtitle' => __('active this section?', 'redux-framework-demo'),
+            'default'  => true,
+        ),
+        array(
+            'id'       => 'office-image',
+            'type'     => 'media',
+            'url'      => true,
+            'title'    => __( 'Office Image', 'redux-framework-demo' ),
+            'compiler' => 'true',
+            'subtitle' => __( 'Upload office image', 'redux-framework-demo' ),
+        ),
+        array(
+            'id'         => 'address',
+            'type'       => 'Textarea',
+            'section_id' => 'address',
+            'title'      => 'Address',
+            'default'    => '12100 Wilshire Blvd 
+Suite 1950 
+Los Angeles, CA 90025'
+        ),
+        array(
+            'id'         => 'phone',
+            'type'       => 'Text',
+            'section_id' => 'phone',
+            'title'      => 'Phone number',
+            'default'    => '(310) 745-5050'
+        ),
+        array(
+            'id'         => 'email',
+            'type'       => 'Text',
+            'section_id' => 'email',
+            'title'      => 'email address',
+            'default'    => 'info@vitalacy.com'
+        ),
+    )
+) );
+
 
 //Redux::setSection( $opt_name, array(
 //    'title' => __( 'Contact information', 'redux-framework-demo' ),

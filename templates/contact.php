@@ -1,3 +1,12 @@
+<?php
+$config = $GLOBALS['config'];
+$active = $config['contact-is-active'];
+$address = $config['address'];
+$phone = $config['phone'];
+$email = $config['email'];
+$office_image = $config['office-image']['url'];
+ ?>
+ <?php if($active == true): ?>
 <section class='contact' id='contact'>
     <h1>Contact Us</h1>
 
@@ -8,17 +17,13 @@
 
         <div class='text'>
             <p class='title'>Address</p>
-            <p class='content'>
-                12100 Wilshire Blvd <br/>
-                Suite 1950 <br/>
-                Los Angeles, CA 90025 <br/>
-            </p>
+            <p class='content'><?= nl2br($address); ?></p>
 
             <p class='title'>Phone</p>
-            <p class='content'>(310) 745-5050</p>
+            <p class='content'><?= $phone ?></p>
 
             <p class='title'>Email</p>
-            <p class='content'><a href='mailto:info@vitalacy.com'>info@vitalacy.com</a></p>
+            <p class='content'><a href="mailto:<?=$email?>"><?= $email ?></a></p>
         </div>
     </div>
 
@@ -28,11 +33,7 @@
         <p>Our specialists will work with you to identify a custom tailored solution for your healthcare
             organization.</p>
 
-        <!--<form action="https://formspree.io/xvgzeplm" method="POST"> -->
-        <!--<input type="text" name="_gotcha" style="display: none"> -->
-        <!--<input placeholder='Email address' type='email'>-->
-        <!--<button type='Submit' class='btn'>Request a Demo</button>-->
-        <!--</form>-->
-        <a href='mailto:info@vitalacy.com' class='btn'>Email us</a>
+        <a href="mailto:<?=$email?>" class='btn'>Email us</a>
     </div>
 </section>
+<?php endif; ?>
