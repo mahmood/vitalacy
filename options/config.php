@@ -586,6 +586,40 @@ Los Angeles, CA 90025'
     )
 ) );
 
+//motto
+
+Redux::setSection( $opt_name, array(
+    'title' => __( 'Footer', 'redux-framework-demo' ),
+    'id'    => 'footer',
+    'desc'  => __( 'Footer section', 'redux-framework-demo' ),
+    'icon'  => 'el el-indent-left',
+    'subsection' => true,
+    'fields' => array (
+        array(
+            'id'       => 'footer-is-active',
+            'type'     => 'switch',
+            'title'    => __('Active', 'redux-framework-demo'),
+            'subtitle' => __('active this section?', 'redux-framework-demo'),
+            'default'  => true,
+        ),
+        array(
+            'id'       => 'footer-logo',
+            'type'     => 'media',
+            'url'      => true,
+            'title'    => __( 'footer logo', 'redux-framework-demo' ),
+            'compiler' => 'true',
+            'subtitle' => __( 'Upload footer logo', 'redux-framework-demo' ),
+        ),
+        array(
+            'id'         => 'motto',
+            'type'       => 'Textarea',
+            'section_id' => 'motto',
+            'title'      => 'Motto',
+            'default'    => 'Improving the quality of care. One wash at a time.'
+        ),
+    )
+) );
+
 
 //Redux::setSection( $opt_name, array(
 //    'title' => __( 'Contact information', 'redux-framework-demo' ),

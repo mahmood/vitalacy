@@ -11,9 +11,15 @@ $office_image = $config['office-image']['url'];
     <h1>Contact Us</h1>
 
     <div class='address'>
-        <div class='map'
-             style='background-image: url(<?php bloginfo('template_url') ?>/assets/img/vitalacy-office-photo.jpg); background-repeat: no-repeat; background-size: cover;'>
-        </div>
+        <?php if(!empty($office_image) && isset($office_image)){?>
+            <div class='map'
+                style='background-image: url(<?= $office_image ?>); background-repeat: no-repeat; background-size: cover;'>
+            </div>
+        <?php }else{?>
+            <div class='map'
+                style='background-image: url(<?php bloginfo('template_url') ?>/assets/img/vitalacy-office-photo.jpg); background-repeat: no-repeat; background-size: cover;'>
+            </div>
+        <?php } ?>
 
         <div class='text'>
             <p class='title'>Address</p>
