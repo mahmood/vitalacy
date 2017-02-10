@@ -1,24 +1,28 @@
+<?php
+$config = $GLOBALS['config'];
+$active = $config['about-is-active'];
+$ceo_message_active  = $config['ceo-message-is-active'];
+$about_desc = $config['about-desc'];
+$ceo_message = $config['ceo-message'];
+$ceo_name = $config['ceo-name'];
+?>
+<?php if($active == true): ?>
 <section class='about' id='about'>
     <div class='slide'>
         <div class='top-part'>
             <h1>About Us</h1>
             <div class='flex-row half-elements title'>
                 <div class='text'>
-                    <p>Vitalacy prevents the transmission of Healthcare Associated infections through the automated
-                        tracking of hand sanitization.</p>
-
-                    <p>We have created an innovative approach to fighting infectious diseases by developing a SaaS
-                        based technology combining Internet of Things (IoT) and wearable technology, to empower
-                        hospitals with technology, data, and guidance to reach their goals and minimize Healthcare
-                        Associated Infections. </p>
+                    <p><?= nl2br($about_desc) ?></p>
                 </div>
 
+                <?php if($ceo_message_active == true): ?>
                 <div class='q'>
-                    <p class='quote'>&ldquo;It is our moral obligation as health providers to give every patient an
-                        infection-free environment.&rdquo;</p>
-                    <span class='author'>Dr. Bahram Nour-Omid, CEO</span>
+                    <p class='quote'>&ldquo;<?= $ceo_message ?>&rdquo;</p>
+                    <span class='author'><?= $ceo_name ?></span>
                 </div>
+                <?php endif ?>
             </div>
         </div>
-
 </section>
+<?php endif; ?>

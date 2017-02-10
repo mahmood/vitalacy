@@ -499,6 +499,55 @@ Redux::setSection( $opt_name, array(
     )
 ) );
 
+
+Redux::setSection( $opt_name, array(
+    'title' => __( 'About', 'redux-framework-demo' ),
+    'id'    => 'about',
+    'desc'  => __( 'About section', 'redux-framework-demo' ),
+    'icon'  => 'el el-info-circle',
+    'subsection' => true,
+    'fields' => array (
+        array(
+            'id'       => 'about-is-active',
+            'type'     => 'switch',
+            'title'    => __('Active', 'redux-framework-demo'),
+            'subtitle' => __('active this section?', 'redux-framework-demo'),
+            'default'  => true,
+        ),
+        array(
+            'id'         => 'about-desc',
+            'type'       => 'Textarea',
+            'section_id' => 'about-desc',
+            'title'      => 'About description',
+            'subtitle' => __('Enter description ', 'redux-framework-demo'),
+            'default'    => 'Vitalacy prevents the transmission of Healthcare Associated infections through the automated tracking of hand sanitization.
+            
+             We have created an innovative approach to fighting infectious diseases by developing a SaaS based technology combining Internet of Things (IoT) and wearable technology, to empower hospitals with technology, data, and guidance to reach their goals and minimize Healthcare Associated Infections.'
+        ),
+        array(
+            'id'       => 'ceo-message-is-active',
+            'type'     => 'switch',
+            'title'    => __('CEO Message', 'redux-framework-demo'),
+            'subtitle' => __('show CEO Message?', 'redux-framework-demo'),
+            'default'  => true,
+        ),
+        array(
+            'id'         => 'ceo-message',
+            'type'       => 'Textarea',
+            'section_id' => 'ceo-message',
+            'title'      => 'CEO Message',
+            'default'    => 'It is our moral obligation as health providers to give every patient an infection-free environment.'
+        ),
+        array(
+            'id'         => 'ceo-name',
+            'type'       => 'Textarea',
+            'section_id' => 'ceo-name',
+            'title'      => 'CEO Name',
+            'default'    => 'Dr. Bahram Nour-Omid, CEO'
+        ),
+    )
+) );
+
 //Redux::setSection( $opt_name, array(
 //    'title' => __( 'Contact information', 'redux-framework-demo' ),
 //    'id'    => 'main_contact',
