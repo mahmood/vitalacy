@@ -3,11 +3,20 @@ $config = $GLOBALS['config'];
 $facebook = $config['facebook'];
 $twitter = $config['twitter'];
 $linkedin = $config['linkedin'];
-//var_dump($config['social']);
+$active = $config['footer-is-active'];
+$motto = $config['motto'];
+$footer_logo = $config['footer-logo']['url'];
 ?>
+<?php if($active == true): ?>
 <footer>
-    <img src='<?php bloginfo('template_url') ?>/assets/img/logo-white.png'>
-    <p>Improving the quality of care. One wash at a time.</p>
+
+    <?php if(!empty($footer_logo) && isset($footer_logo)){?>
+            <img src='<?= $footer_logo ?>'>
+        <?php }else{?>
+            <img src='<?php bloginfo('template_url') ?>/assets/img/logo-white.png'>
+        <?php } ?>
+
+    <p><?= nl2br($motto) ?></p>
     <div class="social">
         <a href="<?= $facebook ?>" target="_blank" class="icon-button twitter"><i
                 class="fa fa-twitter"></i><span></span></a>
@@ -17,6 +26,7 @@ $linkedin = $config['linkedin'];
                 class="fa fa-linkedin"></i><span></span></a>
     </div>
 </footer>
+<?php endif; ?>
 
 
 <script src='<?php bloginfo('template_url') ?>/assets/scripts/libs.js'></script>
@@ -38,6 +48,7 @@ $linkedin = $config['linkedin'];
     ga('send', 'pageview');
 
 </script>
+
 <?php wp_footer(); ?>
 </body>
 </html>
