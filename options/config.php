@@ -460,6 +460,45 @@ Redux::setSection( $opt_name, array(
     )
 ) );
 
+Redux::setSection( $opt_name, array(
+    'title' => __( 'Demo', 'redux-framework-demo' ),
+    'id'    => 'demo',
+    'desc'  => __( 'Demo section', 'redux-framework-demo' ),
+    'icon'  => 'el el-graph',
+    'subsection' => true,
+    'fields' => array (
+        array(
+            'id'       => 'demo-is-active',
+            'type'     => 'switch',
+            'title'    => __('Active', 'redux-framework-demo'),
+            'subtitle' => __('active this section?', 'redux-framework-demo'),
+            'default'  => true,
+        ),
+        array(
+            'id'         => 'demo_video',
+            'type'       => 'Text',
+            'section_id' => 'demo_video',
+            'title'      => 'Demo Video',
+            'subtitle' => __('Enter video link (embed video links) ', 'redux-framework-demo'),
+            'default'    => 'https://player.vimeo.com/video/198276148'
+        ),
+        array(
+            'id'       => 'req-demo-is-active',
+            'type'     => 'switch',
+            'title'    => __('Request A Demo Button', 'redux-framework-demo'),
+            'subtitle' => __('show Request a Demo button?', 'redux-framework-demo'),
+            'default'  => true,
+        ),
+        array(
+            'id'         => 'demo_desc',
+            'type'       => 'Textarea',
+            'section_id' => 'demo_desc',
+            'title'      => 'Description',
+            'default'    => 'Lives are in your hands, what are you waiting for?'
+        ),
+    )
+) );
+
 //Redux::setSection( $opt_name, array(
 //    'title' => __( 'Contact information', 'redux-framework-demo' ),
 //    'id'    => 'main_contact',
