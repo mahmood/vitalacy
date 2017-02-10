@@ -322,6 +322,13 @@ Redux::setSection( $opt_name, array(
     'subsection' => true,
     'fields' => array (
         array(
+            'id'       => 'properties-is-active',
+            'type'     => 'switch',
+            'title'    => __('Active', 'redux-framework-demo'),
+            'subtitle' => __('active this section?', 'redux-framework-demo'),
+            'default'  => true,
+        ),
+        array(
             'id' => 'section-start-1',
             'type' => 'section',
             'title' => __('#1', 'redux-framework-demo'),
@@ -401,6 +408,57 @@ Redux::setSection( $opt_name, array(
     )
 ) );
 
+Redux::setSection( $opt_name, array(
+    'title' => __( 'Problem', 'redux-framework-demo' ),
+    'id'    => 'problem',
+    'desc'  => __( 'Problem section', 'redux-framework-demo' ),
+    'icon'  => 'el el-error',
+    'subsection' => true,
+    'fields' => array (
+        array(
+            'id'       => 'problem-is-active',
+            'type'     => 'switch',
+            'title'    => __('Active', 'redux-framework-demo'),
+            'subtitle' => __('active this section?', 'redux-framework-demo'),
+            'default'  => true,
+        ),
+    )
+) );
+
+
+Redux::setSection( $opt_name, array(
+    'title' => __( 'Products', 'redux-framework-demo' ),
+    'id'    => 'products',
+    'desc'  => __( 'Products section', 'redux-framework-demo' ),
+    'icon'  => 'el el-barcode',
+    'subsection' => true,
+    'fields' => array (
+        array(
+            'id'       => 'product-is-active',
+            'type'     => 'switch',
+            'title'    => __('Active', 'redux-framework-demo'),
+            'subtitle' => __('active this section?', 'redux-framework-demo'),
+            'default'  => true,
+        ),
+    )
+) );
+
+Redux::setSection( $opt_name, array(
+    'title' => __( 'Solutions', 'redux-framework-demo' ),
+    'id'    => 'solutions',
+    'desc'  => __( 'Solutions section', 'redux-framework-demo' ),
+    'icon'  => 'el el-bulb',
+    'subsection' => true,
+    'fields' => array (
+        array(
+            'id'       => 'solutions-is-active',
+            'type'     => 'switch',
+            'title'    => __('Active', 'redux-framework-demo'),
+            'subtitle' => __('active this section?', 'redux-framework-demo'),
+            'default'  => true,
+        ),
+    )
+) );
 
 //Redux::setSection( $opt_name, array(
 //    'title' => __( 'Contact information', 'redux-framework-demo' ),

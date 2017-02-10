@@ -1,4 +1,8 @@
-
+<?php
+$config = $GLOBALS['config'];
+$active = $config['solutions-is-active'];
+?>
+<?php if($active == true): ?>
 <section class='options' id='packages'>
     <h1>Solutions</h1>
 
@@ -128,3 +132,4 @@
         </div>
     </div>
 </section>
+<?php endif; ?>

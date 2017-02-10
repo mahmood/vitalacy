@@ -3,7 +3,9 @@ $config = $GLOBALS['config'];
 $pro1 = array('title'=>$config['properties_1_title'], 'desc'=>$config['properties_1_desc']);
 $pro2 = array('title'=>$config['properties_2_title'], 'desc'=>$config['properties_2_desc']);
 $pro3 = array('title'=>$config['properties_3_title'], 'desc'=>$config['properties_3_desc']);
+$active = $config['properties-is-active'];
 ?>
+<?php if($active == true): ?>
 <section class='properties'>
     <div class='transparent'>
         <img src='<?php bloginfo('template_url') ?>/assets/img/icon-transparent.png' width='65'>
@@ -35,3 +37,4 @@ $pro3 = array('title'=>$config['properties_3_title'], 'desc'=>$config['propertie
         </div>
     </div>
 </section>
+<?php endif ?>

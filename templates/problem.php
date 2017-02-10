@@ -1,4 +1,8 @@
-
+<?php
+$config = $GLOBALS['config'];
+$active = $config['problem-is-active'];
+?>
+<?php if($active == true): ?>
 <section class='problem' id='problem'>
     <h1>The Problem</h1>
 
@@ -42,3 +46,4 @@
         </div>
     </div>
 </section>
+<?php endif; ?>
