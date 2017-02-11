@@ -274,7 +274,7 @@ Redux::setSection( $opt_name, array(
     'id'    => 'social',
     'desc'  => __( 'Social icon links', 'redux-framework-demo' ),
     'icon'  => 'el el-twitter',
-    'subsection' => true,
+    // 'subsection' => true,
     'fields' => array (
         array(
             'id'         => 'facebook',
@@ -309,7 +309,7 @@ Redux::setSection( $opt_name, array(
     'id'    => 'properties',
     'desc'  => __( 'Properties section', 'redux-framework-demo' ),
     'icon'  => 'el el-align-center',
-    'subsection' => true,
+    // 'subsection' => true,
     'fields' => array (
         array(
             'id'       => 'properties-is-active',
@@ -403,7 +403,7 @@ Redux::setSection( $opt_name, array(
     'id'    => 'problem',
     'desc'  => __( 'Problem section', 'redux-framework-demo' ),
     'icon'  => 'el el-error',
-    'subsection' => true,
+    // 'subsection' => true,
     'fields' => array (
         array(
             'id'       => 'problem-is-active',
@@ -421,7 +421,7 @@ Redux::setSection( $opt_name, array(
     'id'    => 'products',
     'desc'  => __( 'Products section', 'redux-framework-demo' ),
     'icon'  => 'el el-barcode',
-    'subsection' => true,
+    // 'subsection' => true,
     'fields' => array (
         array(
             'id'       => 'product-is-active',
@@ -438,7 +438,7 @@ Redux::setSection( $opt_name, array(
     'id'    => 'solutions',
     'desc'  => __( 'Solutions section', 'redux-framework-demo' ),
     'icon'  => 'el el-bulb',
-    'subsection' => true,
+    // 'subsection' => true,
     'fields' => array (
         array(
             'id'       => 'solutions-is-active',
@@ -455,7 +455,7 @@ Redux::setSection( $opt_name, array(
     'id'    => 'demo',
     'desc'  => __( 'Demo section', 'redux-framework-demo' ),
     'icon'  => 'el el-graph',
-    'subsection' => true,
+    // 'subsection' => true,
     'fields' => array (
         array(
             'id'       => 'demo-is-active',
@@ -495,7 +495,7 @@ Redux::setSection( $opt_name, array(
     'id'    => 'about',
     'desc'  => __( 'About section', 'redux-framework-demo' ),
     'icon'  => 'el el-info-circle',
-    'subsection' => true,
+    // 'subsection' => true,
     'fields' => array (
         array(
             'id'       => 'about-is-active',
@@ -543,7 +543,7 @@ Redux::setSection( $opt_name, array(
     'id'    => 'contact',
     'desc'  => __( 'Contact section', 'redux-framework-demo' ),
     'icon'  => 'el el-phone',
-    'subsection' => true,
+    // 'subsection' => true,
     'fields' => array (
         array(
             'id'       => 'contact-is-active',
@@ -593,7 +593,7 @@ Redux::setSection( $opt_name, array(
     'id'    => 'footer',
     'desc'  => __( 'Footer section', 'redux-framework-demo' ),
     'icon'  => 'el el-indent-left',
-    'subsection' => true,
+    // 'subsection' => true,
     'fields' => array (
         array(
             'id'       => 'footer-is-active',

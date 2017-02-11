@@ -40,15 +40,7 @@
                 <img src='<?php bloginfo('template_url') ?>/assets/img/teampictures/Mosheheadshot.jpg'>
                 <figcaption>
                     <span class='name'>MOSHE COHEN</span>
-                    <span class='role'>GM, International Division</span>
-                </figcaption>
-            </figure>
-
-            <figure>
-                <img src='<?php bloginfo('template_url') ?>/assets/img/teampictures/gazelleheadshot.jpg'>
-                <figcaption>
-                    <span class='name'>GAZELLE RASTEGAR</span>
-                    <span class='role'>VP of Business Development</span>
+                    <span class='role'>VP, Business Development</span>
                 </figcaption>
             </figure>
 
