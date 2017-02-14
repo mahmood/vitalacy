@@ -18,9 +18,9 @@ $footer_logo = $config['footer-logo']['url'];
 
     <p><?= nl2br($motto) ?></p>
     <div class="social">
-        <a href="<?= $facebook ?>" target="_blank" class="icon-button twitter"><i
+        <a href="<?= $twitter ?>" target="_blank" class="icon-button twitter"><i
                 class="fa fa-twitter"></i><span></span></a>
-        <a href="<?= $twitter ?>" target="_blank" class="icon-button facebook"><i
+        <a href="<?= $facebook ?>" target="_blank" class="icon-button facebook"><i
                 class="fa fa-facebook"></i><span></span></a>
         <a href="<?= $linkedin ?>" target="_blank" class="icon-button google-plus"><i
                 class="fa fa-linkedin"></i><span></span></a>
