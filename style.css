@@ -1621,9 +1621,11 @@ footer .social a:hover {
     text-transform: uppercase;
     font-size: 12px;
 }
-.popup form .wrapper div br{
+
+.popup form .wrapper div br {
     display: none;
 }
+
 .popup form .wrapper div input,
 .popup form .wrapper div select {
     border-radius: 3px;
