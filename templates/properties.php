@@ -8,7 +8,7 @@ $active = $config['properties-is-active'];
 <?php if($active == true): ?>
 <section class='properties'>
     <div class='transparent'>
-        <img src='<?php bloginfo('template_url') ?>/assets/img/icon-transparent.png' width='65'>
+        <img alt="transparent" src='<?php bloginfo('template_url') ?>/assets/img/icon-transparent.png' width='65'>
         <div>
             <h4><?= $pro2['title'] ?></h4>
             <p>
@@ -18,7 +18,7 @@ $active = $config['properties-is-active'];
     </div>
 
     <div class='life-saving'>
-        <img src='<?php bloginfo('template_url') ?>/assets/img/icon-life-saving.png' width='65'>
+        <img alt="saving" src='<?php bloginfo('template_url') ?>/assets/img/icon-life-saving.png' width='65'>
         <div>
             <h4><?= $pro1['title'] ?></h4>
             <p>
@@ -28,7 +28,7 @@ $active = $config['properties-is-active'];
     </div>
 
     <div class='habit-changing'>
-        <img src='<?php bloginfo('template_url') ?>/assets/img/icon-habit-changing.png' width='65'>
+        <im alt="habit" src='<?php bloginfo('template_url') ?>/assets/img/icon-habit-changing.png' width='65'>
         <div>
             <h4><?= $pro3['title'] ?></h4>
             <p>

@@ -11,9 +11,9 @@ $footer_logo = $config['footer-logo']['url'];
 <footer>
 
     <?php if(!empty($footer_logo) && isset($footer_logo)){?>
-            <img src='<?= $footer_logo ?>'>
+            <img src='<?= $footer_logo ?>' alt="logo">
         <?php }else{?>
-            <img src='<?php bloginfo('template_url') ?>/assets/img/logo-white.png'>
+            <img src='<?php bloginfo('template_url') ?>/assets/img/logo-white.png' alt="logo">
         <?php } ?>
 
     <p><?= nl2br($motto) ?></p>

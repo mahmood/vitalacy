@@ -13,9 +13,9 @@ $intro_shot = $config['intro-shot']['url'];
         <a href='#demop' data-popup='demop' class='btn'>Request a Demo</a>
     </div>
     <?php if(!empty($intro_shot) && isset($intro_shot)) {?>
-        <img src='<?php echo $intro_shot ?>' width='630'>
+        <img alt="intro_shot" src='<?php echo $intro_shot ?>' width='630'>
     <?php }else{ ?>
-        <img src='<?php bloginfo('template_url') ?>/assets/img/dashboard-comp.jpg' width='630'>
+        <img alt="intro_shot" src='<?php bloginfo('template_url') ?>/assets/img/dashboard-comp.jpg' width='630'>
     <?php } ?>
 
 </section>

@@ -439,7 +439,7 @@ $active = $config['product-is-active'];
                 within specified time frames.
             </p>
 
-            <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide5-webportal.jpg' width='680'>
+            <img alt="webportal" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide5-webportal.jpg' width='680'>
 
             <br/>
             <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
@@ -454,7 +454,7 @@ $active = $config['product-is-active'];
                 individual and unit levels.
             </p>
 
-            <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide6-reportingapp.jpg' width='295'>
+            <img alt="reportingapp" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide6-reportingapp.jpg' width='295'>
 
             <br/>
             <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
@@ -470,23 +470,23 @@ $active = $config['product-is-active'];
                 Wristbands provide real-time feedback on each handwash’s quality and duration.
             </p>
 
-            <img src='<?php bloginfo('template_url') ?>/assets/img/wristbands.jpg' width='884'>
+            <img alt="wristbands" src='<?php bloginfo('template_url') ?>/assets/img/wristbands.jpg' width='884'>
 
             <div class='description'>
                 <figure>
-                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-bacteriablue.png' width='226'>
+                    <img alt="bacteriablue" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-bacteriablue.png' width='226'>
                     <figcaption>Latex-free silicone band with silver ion impregnation for antibacterial effect.
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-wristbnd.png' width='226'>
+                    <img alt="wristbnd" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-wristbnd.png' width='226'>
                     <figcaption>One size fits all design. Wear on the wrist or above elbow. Quick close clasp.
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-connected.png' width='226'>
+                    <img alt="connected" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-connected.png' width='226'>
                     <figcaption>Display shows time and battery level, gives wash feedback and vibration reminders.
                     </figcaption>
                 </figure>
@@ -503,7 +503,7 @@ $active = $config['product-is-active'];
                 ensuring the availability of real-time reporting at your fingertips.
             </p>
 
-            <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide4-locationbeacon-device.jpg' width='944'>
+            <img alt="locationbeacon" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide4-locationbeacon-device.jpg' width='944'>
 
             <br/>
             <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
@@ -517,7 +517,7 @@ $active = $config['product-is-active'];
             </p>
 
             <div class='images'>
-                <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide3-dispensersensor-mobile.jpg' width='685'>
+                <img alt="dispensersensor" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide3-dispensersensor-mobile.jpg' width='685'>
                 <!--<p>-->
                 <!--Installed inside any hand sanitizer or soap dispenser. The Dispenser Sensor transmits a signal to the Vitalacy Wristband to signal dispensing of product and signal the start of a hand hygiene event.-->
                 <!--</p>-->
@@ -536,7 +536,7 @@ $active = $config['product-is-active'];
                 within specified time frames.”
             </p>
 
-            <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide5-webportal.jpg' width='916'>
+            <img alt="webportal" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide5-webportal.jpg' width='916'>
 
             <br/>
             <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
@@ -551,7 +551,7 @@ $active = $config['product-is-active'];
                 individual and unit levels.
             </p>
 
-            <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide6-reportingapp-mobile.jpg' width='395'>
+            <img alt="solution" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide6-reportingapp-mobile.jpg' width='395'>
 
             <br/>
             <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>

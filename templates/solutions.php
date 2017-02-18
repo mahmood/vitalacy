@@ -15,20 +15,20 @@ $active = $config['solutions-is-active'];
             </p>
 
             <div class='images'>
-                <img src='<?php bloginfo('template_url') ?>/assets/img/heat-map.png' width='424'/>
+                <img alt="heat" src='<?php bloginfo('template_url') ?>/assets/img/heat-map.png' width='424'/>
                 <div class='includes'>
                     <p>Includes:</p>
                     <div class='items'>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/web-portal.png' width='100'>
+                            <img alt="web-portal" src='<?php bloginfo('template_url') ?>/assets/img/web-portal.png' width='100'>
                             <figcaption>Web Portal</figcaption>
                         </figure>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/dispenser.png' width='100'>
+                            <img alt="dispenser" src='<?php bloginfo('template_url') ?>/assets/img/dispenser.png' width='100'>
                             <figcaption>Dispenser Sensors</figcaption>
                         </figure>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/gateways.png' width='100'>
+                            <img alt="gateways" src='<?php bloginfo('template_url') ?>/assets/img/gateways.png' width='100'>
                             <figcaption>Gateways</figcaption>
                         </figure>
                     </div>
@@ -46,31 +46,31 @@ $active = $config['solutions-is-active'];
             </p>
 
             <div class='images'>
-                <img src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide2-comp.jpg' width='495'/>
+                <img alt="packageoptions" src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide2-comp.jpg' width='495'/>
                 <div class='includes'>
                     <p>Includes:</p>
                     <div class='items'>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide2-reportingapp.png' width='100'/>
+                            <img alt="packageoptions" src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide2-reportingapp.png' width='100'/>
                             <figcaption>Reporting App</figcaption>
                         </figure>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide2-wristband.png' width='100'/>
+                            <img alt="wristband" src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide2-wristband.png' width='100'/>
                             <figcaption>Wristband</figcaption>
                         </figure>
                         <p class='tag blue'>Advanced</p>
                     </div>
                     <div class='items'>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/web-portal.png' width='100'>
+                            <img alt="portal" src='<?php bloginfo('template_url') ?>/assets/img/web-portal.png' width='100'>
                             <figcaption>Web Portal</figcaption>
                         </figure>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/dispenser.png' width='100'>
+                            <img alt="dispenser" src='<?php bloginfo('template_url') ?>/assets/img/dispenser.png' width='100'>
                             <figcaption>Dispenser Sensors</figcaption>
                         </figure>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/gateways.png' width='100'>
+                            <img alt="gateways" src='<?php bloginfo('template_url') ?>/assets/img/gateways.png' width='100'>
                             <figcaption>Gateways</figcaption>
                         </figure>
                         <p class='tag'>Basic</p>
@@ -89,38 +89,38 @@ $active = $config['solutions-is-active'];
             </p>
 
             <div class='images'>
-                <img src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide3-patientcare.jpg' width='445'/>
+                <img alt="packageoptions" src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide3-patientcare.jpg' width='445'/>
                 <div class='includes'>
                     <p>Includes:</p>
                     <div class='items'>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide3-locationbeacon.png' width='100'/>
+                            <img alt="locationbeacon" src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide3-locationbeacon.png' width='100'/>
                             <figcaption class='blue'>Location Beacon</figcaption>
                         </figure>
                         <p class='tag blue'>Comprehensive</p>
                     </div>
                     <div class='items'>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide2-reportingapp.png' width='100'/>
+                            <img alt="reportingapp" src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide2-reportingapp.png' width='100'/>
                             <figcaption>Reporting App</figcaption>
                         </figure>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide2-wristband.png' width='100'/>
+                            <img alt="packageoptions" src='<?php bloginfo('template_url') ?>/assets/img/packageoptions-slide2-wristband.png' width='100'/>
                             <figcaption>Wristband</figcaption>
                         </figure>
                         <p class='tag'>Advanced</p>
                     </div>
                     <div class='items'>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/web-portal.png' width='100'>
+                            <img alt="web-portal" src='<?php bloginfo('template_url') ?>/assets/img/web-portal.png' width='100'>
                             <figcaption>Web Portal</figcaption>
                         </figure>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/dispenser.png' width='100'>
+                            <img alt="dispenser" src='<?php bloginfo('template_url') ?>/assets/img/dispenser.png' width='100'>
                             <figcaption>Dispenser Sensors</figcaption>
                         </figure>
                         <figure>
-                            <img src='<?php bloginfo('template_url') ?>/assets/img/gateways.png' width='100'>
+                            <img alt="gateways" src='<?php bloginfo('template_url') ?>/assets/img/gateways.png' width='100'>
                             <figcaption>Gateways</figcaption>
                         </figure>
                         <p class='tag'>Basic</p>

@@ -4,7 +4,7 @@ $logo_url = $config['logo']['url'];
 $intro_title = $config['intro-title'];
 $intro_desc = $config['intro-desc'];
 ?>
-<html>
+<html lang="en">
 <head>
     <title><?php if (is_home () ) { bloginfo('name'); } elseif ( is_category() ) { single_cat_title(); echo ' - ' ; bloginfo('name'); }
     elseif (is_single() ) { single_post_title(); }
@@ -13,6 +13,7 @@ $intro_desc = $config['intro-desc'];
     <link rel='stylesheet' href='<?php bloginfo('template_url') ?>/assets/styles/font-awesome.min.css'>
     <link rel='stylesheet' href='<?php bloginfo('stylesheet_url'); ?>'>
     <meta charset='utf-8'>
+    <meta http-equiv="content-language" content="en">
     <meta name='viewport' content='width=device-width, user-scalable=no'>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="alternate" type="application/rss+xml" title="<?php printf(__('%s RSS Feed', 'kubrick'), get_bloginfo('name')); ?>" href="<?php bloginfo('rss2_url'); ?>" />
@@ -26,11 +27,11 @@ $intro_desc = $config['intro-desc'];
     <a href='#menu' class='tablet menu'></a>
     <a href='/' class='logo-link'>
         <?php if(!empty($logo_url) && isset($logo_url)) {?>
-            <img src='<?php echo $logo_url ?>' width='65' class='logo'>
+            <img src='<?php echo $logo_url ?>' width='65' alt="logo" class='logo'>
         <?php }else{ ?>
-            <img src='<?php bloginfo('template_url') ?>/assets/img/logo.png' width='65' class='logo'>
+            <img src='<?php bloginfo('template_url') ?>/assets/img/logo.png' alt="logo" width='65' class='logo'>
         <?php } ?>
-        <img src='<?php bloginfo('template_url') ?>/assets/img/mobile-logo-2x.png' width='20' class='logo-mobile'>
+        <img src='<?php bloginfo('template_url') ?>/assets/img/mobile-logo-2x.png' alt="logo" width='20' class='logo-mobile'>
     </a>
 
     <nav>
