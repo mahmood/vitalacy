@@ -9,13 +9,15 @@ $active = $config['problem-is-active'];
     <div class='slideshow'>
         <div class='slide'>
             <div class='stats-left'>
-                <i class='circle'></i>
-                <p><span class='big'>70%</span> of all HAIs are directly caused by poor hand hygiene.</p>
+                <p>
+                    <img src='<?php bloginfo('template_url') ?>/assets/img/pie@2x.png' width='71'></img>
+                    <span class='big'>70%</span> of all HAIs are directly caused by poor hand hygiene.
+                </p>
                 <p>HAI <span class='somewhat-big'>increases</span> the length of hospitalization.</p>
                 <img src='<?php bloginfo('template_url') ?>/assets/img/red-detail.png' alt='details'>
             </div>
             <div class='stats-right no-tablet'>
-                <p><span class='big'>100K</span> Americans are dying as a result of HAI every year.</p>
+                <p><span class='big'>75K</span> Americans are dying as a result of HAI every year.</p>
                 <img src='<?php bloginfo('template_url') ?>/assets/img/red-population.png' alt='population'>
                 <img src='<?php bloginfo('template_url') ?>/assets/img/red-population.png' alt='population'>
                 <img src='<?php bloginfo('template_url') ?>/assets/img/red-population.png' alt='population'>

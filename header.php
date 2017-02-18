@@ -21,25 +21,25 @@ $intro_desc = $config['intro-desc'];
     <?php wp_head(); ?>
 </head>
 <body>
+
 <header>
     <a href='#menu' class='tablet menu'></a>
     <a href='/' class='logo-link'>
         <?php if(!empty($logo_url) && isset($logo_url)) {?>
             <img src='<?php echo $logo_url ?>' width='65' class='logo'>
         <?php }else{ ?>
-        <img src='<?php bloginfo('template_url') ?>/assets/img/logo.png' width='65' class='logo'>
+            <img src='<?php bloginfo('template_url') ?>/assets/img/logo.png' width='65' class='logo'>
         <?php } ?>
         <img src='<?php bloginfo('template_url') ?>/assets/img/mobile-logo-2x.png' width='20' class='logo-mobile'>
     </a>
 
     <nav>
-        <!--<a href='#problem'>Problem</a>-->
         <a href='#solution'>Products</a>
         <a href='#packages'>Solutions</a>
-        <!--<a href='#demo'>Demo</a>-->
         <a href='#about'>About</a>
         <a href='#contact'>Contact</a>
-        <a href='https://admin.vitalacy.com' class='btn small blue btnLogin'>Login</a>
+        <a href='https://admin.vitalacy.com' class='btn small blue btnLogin no-tablet'>Login</a>
+        <a href='https://admin.vitalacy.com' class='tablet'>Login</a>
     </nav>
 </header>
 <div id='header-placeholder'></div>

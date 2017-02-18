@@ -380,19 +380,19 @@ $active = $config['product-is-active'];
 
             <div class='description'>
                 <figure>
-                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-bacteriablue.png' width='110'>
+                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-bacteriablue.png' width='184'>
                     <figcaption>Latex-free silicone band with silver ion impregnation for antibacterial effect.
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-wristbnd.png' width='110'>
+                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-wristbnd.png' width='184'>
                     <figcaption>One size fits all design. Wear on the wrist or above elbow. Quick close clasp.
                     </figcaption>
                 </figure>
 
                 <figure>
-                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-connected.png' width='110'>
+                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-connected.png' width='184'>
                     <figcaption>Display shows time and battery level, gives wash feedback and vibration reminders.
                     </figcaption>
                 </figure>
