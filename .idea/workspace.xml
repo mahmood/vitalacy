@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bbf6274d-4bb2-4b17-bce0-96654d8b692c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/main.js" afterPath="$PROJECT_DIR$/assets/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/demo.php" afterPath="$PROJECT_DIR$/templates/demo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/problem.php" afterPath="$PROJECT_DIR$/templates/problem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/products.php" afterPath="$PROJECT_DIR$/templates/products.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/properties.php" afterPath="$PROJECT_DIR$/templates/properties.php" />
     </list>
     <ignored path="Vitalacy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="617">
-              <caret line="1991" column="1" selection-start-line="1991" selection-start-column="1" selection-end-line="1991" selection-end-column="1" />
+              <caret line="1993" column="19" selection-start-line="1993" selection-start-column="19" selection-end-line="1993" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -63,14 +57,14 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Projects/narek/vitalacy-static/build/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
+            <state relative-caret-position="-14191">
               <caret line="464" column="40" selection-start-line="464" selection-start-column="32" selection-end-line="464" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="products.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="products.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/products.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="436">
@@ -113,10 +107,10 @@
         <option value="$PROJECT_DIR$/templates/intro.php" />
         <option value="$PROJECT_DIR$/templates/properties.php" />
         <option value="$PROJECT_DIR$/templates/problem.php" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$USER_HOME$/Projects/narek/vitalacy-static/build/index.html" />
         <option value="$PROJECT_DIR$/templates/demo.php" />
         <option value="$PROJECT_DIR$/templates/products.php" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -252,12 +246,12 @@
       <workItem from="1487072655439" duration="94000" />
       <workItem from="1487073236766" duration="779000" />
       <workItem from="1487175554153" duration="89000" />
-      <workItem from="1487414101230" duration="3163000" />
+      <workItem from="1487414101230" duration="3737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4125000" />
+    <option name="totallyTimeSpent" value="4699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="524" y="1080" width="1440" height="900" extended-state="0" />
@@ -266,11 +260,11 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13733906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cabal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42289156" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42292994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42289156" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="GhcMod" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -380,14 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="1991" column="1" selection-start-line="1991" selection-start-column="1" selection-end-line="1991" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/solutions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -412,18 +398,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="394" column="116" selection-start-line="394" selection-start-column="116" selection-end-line="394" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Projects/narek/vitalacy-static/build/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
+        <state relative-caret-position="-14191">
           <caret line="464" column="40" selection-start-line="464" selection-start-column="32" selection-end-line="464" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/products.php">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="394" column="116" selection-start-line="394" selection-start-column="116" selection-end-line="394" selection-end-column="116" />
+        <state relative-caret-position="617">
+          <caret line="1993" column="19" selection-start-line="1993" selection-start-column="19" selection-end-line="1993" selection-end-column="19" />
           <folding />
         </state>
       </provider>
