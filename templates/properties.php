@@ -28,7 +28,7 @@ $active = $config['properties-is-active'];
     </div>
 
     <div class='habit-changing'>
-        <im alt="habit" src='<?php bloginfo('template_url') ?>/assets/img/icon-habit-changing.png' width='65'>
+        <img alt="habit" src='<?php bloginfo('template_url') ?>/assets/img/icon-habit-changing.png' width='65'>
         <div>
             <h4><?= $pro3['title'] ?></h4>
             <p>
