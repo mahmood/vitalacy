@@ -669,7 +669,7 @@ header nav a:hover {
 .problem .slick-list {
   overflow: hidden;
 }
-.slick-prev, .slick-next {
+.problem .slick-prev, .slick-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -679,18 +679,18 @@ header nav a:hover {
   height: 40px;
   cursor: pointer;
 }
-.slick-next {
+.problem .slick-next {
   right: -5rem;
 }
-.slick-prev {
+.problem .slick-prev {
   left: -5rem;
 }
-.slick-prev .prevIcon {
+.problem .slick-prev .prevIcon {
   display: block;
   position: relative;
   outline: none;
 }
-.slick-prev .prevIcon::before {
+.problem .slick-prev .prevIcon::before {
   content: '';
   position: absolute;
   width: 20px;
@@ -700,7 +700,7 @@ header nav a:hover {
   background-color: #333;
   transform: rotate(-45deg);
 }
-.slick-prev .prevIcon::after {
+.problem .slick-prev .prevIcon::after {
   content: '';
   position: absolute;
   width: 20px;
@@ -710,7 +710,7 @@ header nav a:hover {
   background-color: #333;
   transform: rotate(45deg);
 }
-.slick-next .nextIcon::before {
+.problem .slick-next .nextIcon::before {
   content: '';
   position: absolute;
   width: 20px;
@@ -720,7 +720,7 @@ header nav a:hover {
   background-color: #333;
   transform: rotate(45deg);
 }
-.slick-next .nextIcon::after {
+.problem .slick-next .nextIcon::after {
   content: '';
   position: absolute;
   width: 20px;
@@ -729,6 +729,96 @@ header nav a:hover {
   top: 25px;
   background-color: #333;
   transform: rotate(-45deg);
+}
+/* Dots */
+.problem .slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.problem .slick-dots
+{
+    position: relative;
+    bottom: -4rem;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.problem .slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.problem .slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.problem .slick-dots li button:hover,
+.problem .slick-dots li button:focus
+{
+    outline: none;
+}
+.problem .slick-dots li button:hover:before,
+.problem .slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.problem .slick-dots li button:before
+{
+    font-family: 'slick';
+    /*font-size: 60px;*/
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 15px;
+    height: 15px;
+
+    content: '';
+    text-align: center;
+
+    color: #FFFFFF;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.problem .slick-dots li.slick-active button:before
+{
+    /*opacity: .75;*/
+    background: #cccccc;
 }
 .problem .slide.slide.slide > :last-of-type {
   padding-left: 5rem;
