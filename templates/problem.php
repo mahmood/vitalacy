@@ -14,7 +14,7 @@ $active = $config['problem-is-active'];
                         <span class='big'>70%</span> of all HAIs are directly caused by poor hand hygiene.
                     </p>
                     <p>HAI <span class='somewhat-big'>increases</span> the length of hospitalization.</p>
-                    <img alt="red-detail" src='<?php bloginfo('template_url') ?>/assets/img/red-detail.png' alt='details' />
+                    <img class="red-img" alt="red-detail" src='<?php bloginfo('template_url') ?>/assets/img/red-detail.png' alt='details' />
                 </div>
                 <div class='stats-right no-tablet'>
                     <p><span class='big'>75K</span> Americans are dying as a result of HAI every year.</p>

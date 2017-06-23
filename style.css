@@ -9,6 +9,7 @@ Author URI: http://www.mahmoodzamani.com
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 * {
   box-sizing: border-box;
+  outline: none !important;
 }
 .hidden {
   opacity: 0;
@@ -657,13 +658,77 @@ header nav a:hover {
 .problem .slide-problem {
   position: relative;
   width: 100%;
-  overflow: hidden !important;
+  /*overflow: hidden !important;*/
   cursor: grab;
   top: 0rem;
 }
 .problem .slide-problem .slide-problem-item {
   display: inline-block;
   overflow: hidden;
+}
+.problem .slick-list {
+  overflow: hidden;
+}
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.slick-next {
+  right: -5rem;
+}
+.slick-prev {
+  left: -5rem;
+}
+.slick-prev .prevIcon {
+  display: block;
+  position: relative;
+  outline: none;
+}
+.slick-prev .prevIcon::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  left: 0;
+  top: -8px;
+  background-color: #333;
+  transform: rotate(-45deg);
+}
+.slick-prev .prevIcon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  left: 0;
+  top: 5px;
+  background-color: #333;
+  transform: rotate(45deg);
+}
+.slick-next .nextIcon::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  right: 7px;
+  top: 12px;
+  background-color: #333;
+  transform: rotate(45deg);
+}
+.slick-next .nextIcon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  right: 7px;
+  top: 25px;
+  background-color: #333;
+  transform: rotate(-45deg);
 }
 .problem .slide.slide.slide > :last-of-type {
   padding-left: 5rem;
@@ -704,11 +769,12 @@ header nav a:hover {
 }
 .problem .stats-right p:first-of-type {
   order: 0;
+  margin-left: 2rem;
 }
 .problem .stats-right img {
   max-width: 90%;
   vertical-align: middle;
-  margin: 1rem 2rem;
+  margin: 1rem 3rem;
   order: 2;
 }
 .problem .stats-right p.year {
@@ -725,6 +791,9 @@ header nav a:hover {
   content: '';
   order: 1;
   width: 100%;
+}
+.problem .stats-left .red-img {
+  width: 95%;
 }
 @media (max-width: 1040px) {
   .problem .stats-left,
