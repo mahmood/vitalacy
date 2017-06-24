@@ -1782,12 +1782,12 @@ footer .social a:hover {
   background: #b3d7ff;
   color: white;
 }
-.solution.slide-0 .dot {
+.solution.slide-0 .slick-dots li button:before {
   background: white;
   border: 1px solid #489eff;
   opacity: 1;
 }
-.solution.slide-0 .dot.is-selected {
+.solution.slide-0 .slick-dots li.slick-active button:before {
   background: #489eff;
 }
 .solution .slide-products-item svg {
