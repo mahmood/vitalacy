@@ -1603,6 +1603,171 @@ footer .social a:hover {
   padding: 5rem 10rem;
   transition: background 0.5s ease, color 0.5s ease;
 }
+.solution .slide-products {
+  position: relative;
+  width: 100%;
+  /*overflow: hidden !important;*/
+  cursor: grab;
+  top: 0rem;
+}
+.solution .slide-products .slide-products-item {
+  display: inline-block;
+  overflow: hidden;
+}
+.solution .slick-list {
+  overflow: hidden;
+}
+.solution .slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.solution .slick-next {
+  right: -5rem;
+}
+.solution .slick-prev {
+  left: -5rem;
+}
+.solution .slick-prev .prevIcon {
+  display: block;
+  position: relative;
+  outline: none;
+}
+.solution .slick-prev .prevIcon::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  left: 0;
+  top: -8px;
+  background-color: #333;
+  transform: rotate(-45deg);
+}
+.solution .slick-prev .prevIcon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  left: 0;
+  top: 5px;
+  background-color: #333;
+  transform: rotate(45deg);
+}
+.solution .slick-next .nextIcon::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  right: 7px;
+  top: 12px;
+  background-color: #333;
+  transform: rotate(45deg);
+}
+.solution .slick-next .nextIcon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  right: 7px;
+  top: 25px;
+  background-color: #333;
+  transform: rotate(-45deg);
+}
+/* Dots */
+.solution .slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.solution .slick-dots
+{
+    position: relative;
+    bottom: -4rem;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.solution .slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.solution .slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.solution .slick-dots li button:hover,
+.solution .slick-dots li button:focus
+{
+    outline: none;
+}
+.solution .slick-dots li button:hover:before,
+.solution .slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.solution .slick-dots li button:before
+{
+    font-family: 'slick';
+    /*font-size: 60px;*/
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 15px;
+    height: 15px;
+
+    content: '';
+    text-align: center;
+
+    color: #FFFFFF;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.solution .slick-dots li.slick-active button:before
+{
+    /*opacity: .75;*/
+    background: #cccccc;
+}
 .solution svg text,
 .solution svg tspan {
   font-family: Avenir Next;
@@ -1625,77 +1790,67 @@ footer .social a:hover {
 .solution.slide-0 .dot.is-selected {
   background: #489eff;
 }
-.solution.slide-0 .flickity-prev-next-button {
-  background: transparent;
-  border: 1px solid white;
-}
-.solution.slide-0 .flickity-prev-next-button svg {
-  transform: scale(0.8);
-}
-.solution.slide-0 .flickity-prev-next-button svg path {
-  fill: white;
-}
-.solution .slide svg {
+.solution .slide-products-item svg {
   display: block;
-  max-width: 90%;
+  max-width: 75%;
   margin: 0 auto;
 }
-.solution .slide.centered {
+.solution .slide-products-item.centered {
   text-align: center;
 }
-.solution .slide.centered h2 {
+.solution .slide-products-item.centered h2 {
   font-family: Avenir Next;
   font-weight: normal;
   text-transform: none;
 }
-.solution .slide.centered > p {
+.solution .slide-products-item.centered > p {
   max-width: 50%;
   margin: 4rem auto;
   color: #7c7c7c;
 }
-.solution .slide.centered a.btn {
+.solution .slide-products-item.centered a.btn {
   margin-top: 2rem;
 }
-.solution .slide.centered .images {
+.solution .slide-products-item.centered .images {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.solution .slide.centered.location-beacon img {
+.solution .slide-products-item.centered.location-beacon img {
   max-width: 70%;
 }
-.solution .slide.centered.dispenser {
+.solution .slide-products-item.centered.dispenser {
   flex-wrap: nowrap;
 }
 @media (max-width: 1040px) {
-  .solution .slide.centered.app img {
+  .solution .slide-products-item.centered.app img {
     max-width: 70%;
   }
 }
-.solution .slide.centered.band > img {
+.solution .slide-products-item.centered.band > img {
   width: 35%;
 }
-.solution .slide.centered.band .description {
+.solution .slide-products-item.centered.band .description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
 @media (max-width: 1040px) {
-  .solution .slide.centered.band .description {
+  .solution .slide-products-item.centered.band .description {
     display: none;
   }
 }
-.solution .slide.centered.band .description figure {
+.solution .slide-products-item.centered.band .description figure {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   max-width: 50%;
 }
-.solution .slide.centered.band .description figure img {
+.solution .slide-products-item.centered.band .description figure img {
   margin-bottom: 3rem;
 }
 @media (max-width: 1040px) {

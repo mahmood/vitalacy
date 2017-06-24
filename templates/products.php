@@ -3,13 +3,10 @@ $config = $GLOBALS['config'];
 $active = $config['product-is-active'];
 ?>
 <?php if($active == true): ?>
-<section class='solution' id='solution'>
+<section class='solution slide-0' id='solution'>
     <h1>Products</h1>
-
-    <div class='slideshow no-tablet'>
-        <div class='slide'>
-            <!--<img src='/assets/img/solutions-illustration.svg' width='100%'>-->
-
+    <div class="slide-products">
+        <div class="slide-products-item">
             <svg width="1180px" viewBox="0 0 1200 1006" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
@@ -366,10 +363,8 @@ $active = $config['product-is-active'];
                     </g>
                 </g>
             </svg>
-
         </div>
-
-        <div class='slide centered band'>
+        <div class="slide-products-item centered band">
             <h2>Vitalacy Wristbands</h2>
             <p>
                 Outfit your healthcare organization with the ultimate symbol of utility and style - an intelligent
@@ -401,8 +396,7 @@ $active = $config['product-is-active'];
             <br/>
             <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
         </div>
-
-        <div class='slide centered location-beacon'>
+        <div class='slide-products-item centered location-beacon'>
             <h2>Location Beacon</h2>
             <p>
                 No matter how large or small your institution, location information is tracked and managed with accuracy
@@ -415,7 +409,7 @@ $active = $config['product-is-active'];
             <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
         </div>
 
-        <div class='slide centered dispenser'>
+        <div class='slide-products-item centered dispenser'>
             <h2>Dispenser Sensor</h2>
             <p>
                 Every hand sanitizer and soap dispenser becomes a smart device equipped with a small sensor that
@@ -431,7 +425,7 @@ $active = $config['product-is-active'];
             <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
         </div>
 
-        <div class='slide centered'>
+        <div class='slide-products-item centered'>
             <h2>Web Portal</h2>
             <p>
                 Your web panel is available to enable individuals and management to track and oversee all compliance
@@ -446,7 +440,7 @@ $active = $config['product-is-active'];
         </div>
 
 
-        <div class='slide centered app'>
+        <div class='slide-products-item centered app'>
             <h2>Mobile Reporting App</h2>
             <p>
                 The mobile reporting app allows users to view their own hand hygiene progress at anytime. The app
@@ -455,103 +449,6 @@ $active = $config['product-is-active'];
             </p>
 
             <img alt="reportingapp" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide6-reportingapp.jpg' width='295'>
-
-            <br/>
-            <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
-        </div>
-    </div>
-    </div>
-
-    <div class='slideshow tablet'>
-        <div class='slide centered band'>
-            <h2>Vitalacy Wristbands</h2>
-            <p>
-                Knowing how often and how long individuals are washing their hands.
-                Wristbands provide real-time feedback on each handwash’s quality and duration.
-            </p>
-
-            <img alt="wristbands" src='<?php bloginfo('template_url') ?>/assets/img/wristbands.jpg' width='884'>
-
-            <div class='description'>
-                <figure>
-                    <img alt="bacteriablue" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-bacteriablue.png' width='226'>
-                    <figcaption>Latex-free silicone band with silver ion impregnation for antibacterial effect.
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img alt="wristbnd" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-wristbnd.png' width='226'>
-                    <figcaption>One size fits all design. Wear on the wrist or above elbow. Quick close clasp.
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img alt="connected" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-connected.png' width='226'>
-                    <figcaption>Display shows time and battery level, gives wash feedback and vibration reminders.
-                    </figcaption>
-                </figure>
-            </div>
-
-            <br/>
-            <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
-        </div>
-
-        <div class='slide centered location-beacon'>
-            <h2>Location Beacon</h2>
-            <p>
-                No matter how large or small your institution, location information is tracked and managed with accuracy
-                ensuring the availability of real-time reporting at your fingertips.
-            </p>
-
-            <img alt="locationbeacon" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide4-locationbeacon-device.jpg' width='944'>
-
-            <br/>
-            <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
-        </div>
-
-        <div class='slide centered dispenser'>
-            <h2>Dispenser Sensor</h2>
-            <p>
-                Tracking dispenser activity and usage.
-                Identifying usage of soap vs. sanitizer based on locations and departments.
-            </p>
-
-            <div class='images'>
-                <img alt="dispensersensor" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide3-dispensersensor-mobile.jpg' width='685'>
-                <!--<p>-->
-                <!--Installed inside any hand sanitizer or soap dispenser. The Dispenser Sensor transmits a signal to the Vitalacy Wristband to signal dispensing of product and signal the start of a hand hygiene event.-->
-                <!--</p>-->
-                <!--<img src='/assets/img/solution-slide3-dispensersensor-right.jpg' width='912'>-->
-            </div>
-
-            <br/>
-            <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
-        </div>
-
-        <div class='slide centered'>
-            <h2>Web Portal</h2>
-            <p>
-                Your admin panel is available to enable individuals and management to track and oversee all compliance
-                activity. Data is available to view hospital-wide, unit-wide, or individual hand hygiene information
-                within specified time frames.”
-            </p>
-
-            <img alt="webportal" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide5-webportal.jpg' width='916'>
-
-            <br/>
-            <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
-        </div>
-
-
-        <div class='slide centered app'>
-            <h2>Mobile Reporting App</h2>
-            <p>
-                The mobile reporting app allows users to view their own hand hygiene progress at anytime. The app
-                includes a dashboard showing their daily, weekly, and monthly progress as well as leaderboards on both
-                individual and unit levels.
-            </p>
-
-            <img alt="solution" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide6-reportingapp-mobile.jpg' width='395'>
 
             <br/>
             <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
