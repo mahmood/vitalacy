@@ -971,43 +971,210 @@ header nav a:hover {
 .options h1 {
   color: #489eff !important;
 }
-.options .slideshow .slide {
+.options .slide-options .slide-options-item {
+  display: inline-block;
+  overflow: hidden;
+}
+.options .slick-list {
+  overflow: hidden;
+  cursor: grab;
+}
+.options .slide-options .slide-options-item.package-1 {
+  position: relative;
+  top: -18rem;
+}
+.options .slide-options .slide-options-item.package-2 {
+  position: relative;
+  top: -12rem;
+}
+.options .slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.options .slick-next {
+  right: -5rem;
+}
+.options .slick-prev {
+  left: -5rem;
+}
+.options .slick-prev .prevIcon {
+  display: block;
+  position: relative;
+  outline: none;
+}
+.options .slick-prev .prevIcon::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  left: 0;
+  top: -8px;
+  background-color: #333;
+  transform: rotate(-45deg);
+}
+.options .slick-prev .prevIcon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  left: 0;
+  top: 5px;
+  background-color: #333;
+  transform: rotate(45deg);
+}
+.options .slick-next .nextIcon::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  right: 7px;
+  top: 12px;
+  background-color: #333;
+  transform: rotate(45deg);
+}
+.options .slick-next .nextIcon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  right: 7px;
+  top: 25px;
+  background-color: #333;
+  transform: rotate(-45deg);
+}
+/* Dots */
+.options .slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.options .slick-dots
+{
+    position: relative;
+    bottom: -4rem;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.options .slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.options .slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.options .slick-dots li button:hover,
+.options .slick-dots li button:focus
+{
+    outline: none;
+}
+.options .slick-dots li button:hover:before,
+.options .slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.options .slick-dots li button:before
+{
+    font-family: 'slick';
+    /*font-size: 60px;*/
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 15px;
+    height: 15px;
+
+    content: '';
+    text-align: center;
+
+    color: #FFFFFF;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.options .slick-dots li.slick-active button:before
+{
+    /*opacity: .75;*/
+    background: #cccccc;
+}
+.options .slide-options .slide-options-item {
   text-align: center;
 }
-.options .slideshow .slide h4 {
+.options .slide-options .slide-options-item h4 {
   font-family: Avenir Next;
   font-weight: 500;
   letter-spacing: 1.9px;
   font-size: 2.6rem;
 }
-.options .slideshow .slide p {
+.options .slide-options .slide-options-item p {
   font-size: 1.7rem;
   letter-spacing: 0.5px;
   max-width: 50%;
   margin: 1rem auto 3rem;
 }
-.options .slideshow .slide .images {
+.options .slide-options .slide-options-item .images {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.options .slideshow .slide .images > img {
+.options .slide-options .slide-options-item .images > img {
   flex-shrink: 0;
   align-self: center;
   margin-right: 3rem;
   width: 45%;
 }
-.options .slideshow .slide.package-3 .images > img {
+.options .slide-options .slide-options-item.package-3 .images > img {
   width: 30%;
 }
-.options .slideshow .slide .includes {
+.options .slide-options .slide-options-item .includes {
   display: flex;
   flex-direction: column;
   text-align: left;
   flex: 2;
   justify-content: center;
 }
-.options .slideshow .slide .includes .items {
+.options .slide-options .slide-options-item .includes .items {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -1017,42 +1184,42 @@ header nav a:hover {
   border-bottom: 1px solid #cccccc;
 }
 @media (max-width: 1040px) {
-  .options .slideshow .slide .includes .items {
+  .options .slide-options .slide-options-item .includes .items {
     justify-content: flex-start;
   }
 }
-.options .slideshow .slide .includes .items:last-of-type {
+.options .slide-options .slide-options-item .includes .items:last-of-type {
   border-bottom: 0;
 }
-.options .slideshow .slide .includes .items .tag {
+.options .slide-options .slide-options-item .includes .items .tag {
   margin-left: auto;
   background: none;
   align-self: center;
 }
 @media (max-width: 1040px) {
-  .options .slideshow .slide .includes .items .tag {
+  .options .slide-options .slide-options-item .includes .items .tag {
     display: none;
   }
 }
-.options .slideshow .slide .includes p {
+.options .slide-options .slide-options-item .includes p {
   margin: 1rem;
 }
-.options .slideshow .slide .includes img {
+.options .slide-options .slide-options-item .includes img {
   margin: 0 auto;
   border-radius: 50%;
   box-shadow: 0 0 0 0px transparent,
                       0 0 0 0px transparent inset;
   transition: box-shadow 0.5s ease;
 }
-.options .slideshow .slide .includes img:hover {
+.options .slide-options .slide-options-item .includes img:hover {
   /*box-shadow: 0 0 0 2px @blue,*/
   /*0 0 0 2px @blue inset;*/
 }
-.options .slideshow .slide .includes figure {
+.options .slide-options .slide-options-item .includes figure {
   text-align: center;
   margin: 0 1rem;
 }
-.options .slideshow .slide .includes figure figcaption {
+.options .slide-options .slide-options-item .includes figure figcaption {
   margin-top: 0.5rem;
   font-size: 1.4rem;
   font-family: Avenir Next;
@@ -1060,18 +1227,18 @@ header nav a:hover {
   color: #7c7c7c;
 }
 @media (max-width: 1040px) {
-  .options .slideshow .slide .includes figure {
+  .options .slide-options .slide-options-item .includes figure {
     width: 30%;
   }
 }
-.options .slideshow .slide .btn {
+.options .slide-options .slide-options-item .btn {
   margin-top: 3rem;
 }
 @media (max-width: 1040px) {
-  .options .slideshow .images > img {
+  .options .slide-options .images > img {
     display: none;
   }
-  .options .slideshow .images .includes > p {
+  .options .slide-options .images .includes > p {
     display: none;
   }
 }

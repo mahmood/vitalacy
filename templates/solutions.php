@@ -5,9 +5,8 @@ $active = $config['solutions-is-active'];
 <?php if($active == true): ?>
 <section class='options' id='packages'>
     <h1>Solutions</h1>
-
-    <div class='slideshow'>
-        <div class='slide package-1'>
+    <div class="slide-options">
+        <div class="slide-options-item package-1">
             <h4>Package 1: Dispenser Management</h4>
             <p>
                 Track dispenser activity with top accuracy and identify the real numbers knowing exact soap and
@@ -37,8 +36,7 @@ $active = $config['solutions-is-active'];
 
             <a href='#pricing' class='btn' data-popup='pricep'>Request Pricing</a>
         </div>
-
-        <div class='slide package-2'>
+        <div class="slide-options-item package-2">
             <h4>Package 2: Advanced Reporting System</h4>
             <p>
                 Know how often and for how long individuals are washing their hands providing them with feedback and
@@ -80,8 +78,7 @@ $active = $config['solutions-is-active'];
 
             <a href='#pricing' class='btn' data-popup='pricep'>Request Pricing</a>
         </div>
-
-        <div class='slide package-3'>
+        <div class="slide-options-item package-3">
             <h4>Package 3: Comprehensive Safety Network</h4>
             <p>
                 The world’s most accurate hygiene data providing you with the information needed to meet and beat
@@ -131,5 +128,6 @@ $active = $config['solutions-is-active'];
             <a href='#pricing' class='btn' data-popup='pricep'>Request Pricing</a>
         </div>
     </div>
+    
 </section>
 <?php endif; ?>
