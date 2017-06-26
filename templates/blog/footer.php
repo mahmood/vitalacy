@@ -23,6 +23,18 @@
 <script src="<?php bloginfo('template_url') ?>/assets/blog/scripts/lib/browser.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/blog/scripts/lib/slick.min.js"></script>
 <script src="<?php bloginfo('template_url') ?>/assets/blog/scripts/main.js"></script>
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3344892.js"></script>
+<!-- Hotjar Tracking Code for www.vitalacy.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:523279,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 <?php wp_footer(); ?>
 </body>
 

@@ -29,7 +29,9 @@ $intro_desc = $config['intro-desc'];
         <?php if(!empty($logo_url) && isset($logo_url)) {?>
             <img src='<?php echo $logo_url ?>' width='65' alt="logo" class='logo'>
         <?php }else{ ?>
-            <img src='<?php bloginfo('template_url') ?>/assets/img/logo.png' alt="logo" width='65' class='logo'>
+            <div class="logo-new">
+                <img src='<?php bloginfo('template_url') ?>/assets/blog/images/svg/blue-logo.svg' alt="logo" width='65' class='logo'>
+            </div>
         <?php } ?>
         <img src='<?php bloginfo('template_url') ?>/assets/img/mobile-logo-2x.png' alt="logo" width='20' class='logo-mobile'>
     </a>
@@ -37,6 +39,7 @@ $intro_desc = $config['intro-desc'];
     <nav>
         <a href='#solution'>Products</a>
         <a href='#packages'>Solutions</a>
+        <a href='<?php bloginfo('url') ?>/blog'>Blog</a>
         <a href='#about'>About</a>
         <a href='#contact'>Contact</a>
         <a href='https://admin.vitalacy.com' class='btn small blue btnLogin no-tablet'>Login</a>

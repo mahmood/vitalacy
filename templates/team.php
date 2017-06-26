@@ -40,7 +40,15 @@
                 <img alt="Mosheheadshot" src='<?php bloginfo('template_url') ?>/assets/img/teampictures/Mosheheadshot.jpg'>
                 <figcaption>
                     <span class='name'>MOSHE COHEN</span>
-                    <span class='role'>VP, Business Development</span>
+                    <span class='role'>VP Business Development</span>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img alt="Mosheheadshot" src='<?php bloginfo('template_url') ?>/assets/img/teampictures/Richard.jpg'>
+                <figcaption>
+                    <span class='name'>Richard Kuschinsky</span>
+                    <span class='role'>Senior Director of Sales</span>
                 </figcaption>
             </figure>
 

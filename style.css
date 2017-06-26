@@ -346,9 +346,9 @@ header nav a:hover {
 @media (min-width: 1040px) {
   header.sticky {
     position: fixed;
-    top: 0;
+    /*top: 0;*/
     left: 0;
-    padding: 1rem 10rem;
+    padding: 0rem 10rem;
     background: rgba(255, 255, 255, 0.88);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.36);
     z-index: 100000;
@@ -357,6 +357,9 @@ header nav a:hover {
     align-items: center;
     transform: translateY(-100%);
     opacity: 0;
+  }
+  header nav {
+    padding: 0.4rem 1rem!important;
   }
   header.sticky::after {
     content: none;
@@ -373,15 +376,15 @@ header nav a:hover {
     align-self: flex-start;
   }
   header.sticky .logo-link {
-    width: 12rem;
+    /*width: 12rem;*/
     max-height: 2.7rem;
-    overflow: hidden;
+    /*overflow: hidden;*/
     flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  header.sticky .logo-link::after {
+  /*header.sticky .logo-link::after {
     content: 'Vitalacy';
     color: #489eff;
     text-transform: uppercase;
@@ -390,12 +393,15 @@ header nav a:hover {
     font-size: 17px;
     font-family: Avenir Next;
     font-weight: bold;
-  }
+  }*/
   header.sticky + #header-placeholder {
     height: 238px;
   }
 }
 @media (max-width: 1040px) {
+  .logo-new{
+    display: none;
+  }
   header {
     position: fixed;
     left: 0;
@@ -582,13 +588,14 @@ header nav a:hover {
   font-size: 1.9rem;
 }
 .properties div img {
-  margin-top: -8.5rem;
+  margin-top: -6.5rem;
 }
 .properties div h4 {
   font-family: Avenir Next;
   font-weight: 500;
   letter-spacing: 2.9px;
   font-size: 2.4rem;
+  white-space: nowrap;
 }
 @media (max-width: 1040px) {
   .properties {
@@ -1372,6 +1379,7 @@ header nav a:hover {
 .about figure figcaption .name {
   font-family: Avenir Next;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .about figure figcaption .role {
   font-size: 1.2rem;
@@ -1723,7 +1731,7 @@ footer .social a:hover {
     height: 10rem;
 }
 
-.popup form .wrapper div {
+.popup form .wrapper .div {
     width: 40%;
     margin: 2rem auto 2rem 0;
     display: flex;
@@ -1733,6 +1741,11 @@ footer .social a:hover {
 
 .popup form .wrapper div.full-width {
     width: 90%;
+}
+
+.captcha {
+    justify-content: center;
+    display: flex;
 }
 
 .popup form .wrapper div label {
@@ -2026,8 +2039,8 @@ footer .social a:hover {
   }
 }
 .is-tablet .solution.slide-0 {
-  background: white;
-  color: inherit;
+  /*background: white;
+  color: inherit;*/
 }
 /*! Flickity v2.0.5
 http://flickity.metafizzy.co
@@ -2216,4 +2229,27 @@ body > section:last-of-type {
 .page-content {
     margin-bottom: 20%;
     padding: 0 9rem;
+}
+
+.logo-new::after{
+    content: 'Vitalacy';
+    position: relative;
+    top: -1rem;
+    left: .2rem;
+    font-family: 'Avenir Next';
+    font-size: 1.7944272rem;
+    font-weight: 600;
+    letter-spacing: .8px;
+    color: #2374FC;
+    text-transform: uppercase;
+}
+.logo-new img {
+  width: 40px;
+  height: 40px;
+}
+
+@media(max-width: 1155px) {
+  header nav a{
+    margin: 0 .5rem;
+  }
 }

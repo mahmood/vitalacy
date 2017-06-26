@@ -3,6 +3,32 @@ $config = $GLOBALS['config'];
 $footer_logo = $config['footer-logo']['url'];
 get_template_part('templates/blog/header');
 ?>
+<div class="hero hidden">
+              <div class="nav">
+                <div class="nav-left">
+                <?php
+                $luminance = 180;
+                if($luminance > 170) {?>
+                  <a class="nav-item logo logo-light" href="<?php bloginfo('url')?>/blog">
+                  <img class="blue--logo" src="<?php bloginfo('template_url') ?>/assets/blog/images/svg/blue-logo.svg" alt="">                                      
+                <?php }else { ?>
+                  <a class="nav-item logo logo-dark" href="<?php bloginfo('url')?>/blog">
+                  <img class="white--logo" src="<?php bloginfo('template_url') ?>/assets/blog/images/svg/white-logo.svg" alt="">
+                <?php } ?>
+                </a></div><span id="nav-toggle2" class="nav-toggle"><span></span><span></span><span></span></span>
+                <?php if($luminance > 170) { ?>
+                <div class="nav-right nav-menu is--dark">
+                <?php }else{ ?>
+                <div class="nav-right nav-menu">                
+                <?php } ?>
+                  <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>                                          
+                <a class="nav-item nav-item__request popup-open" title="">Request A Demo</a></div>
+                <div class="toggleMenu" id="toggleMenu"><a class="toggleMenu--logo" href="<?php bloginfo('url')?>/blog"><img class="blue--logo" src="<?php bloginfo('template_url') ?>/assets/blog/images/svg/blue-logo.svg" alt=""></a>
+                  <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                  <a class="req-a-demo popup-open">Request A Demo</a>
+                </div>
+              </div>
+      </div>  
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <header class="blog--post">
           <?php 
@@ -21,13 +47,12 @@ get_template_part('templates/blog/header');
                 <div class="nav-left">
                 <?php
                 if($luminance > 170) {?>
-                  <a class="nav-item logo logo-light" href="#">
+                  <a class="nav-item logo logo-light" href="<?php bloginfo('url')?>/blog">
                   <img class="blue--logo" src="<?php bloginfo('template_url') ?>/assets/blog/images/svg/blue-logo.svg" alt="">                                      
                 <?php }else { ?>
-                  <a class="nav-item logo logo-dark" href="#">
+                  <a class="nav-item logo logo-dark" href="<?php bloginfo('url')?>/blog">
                   <img class="blue--logo" src="<?php bloginfo('template_url') ?>/assets/blog/images/svg/blue-logo.svg" alt="">
                 <?php } ?>
-                <!--<a class="nav-item logo logo-dark" href="#">-->
                 </a></div><span class="nav-toggle"><span></span><span></span><span></span></span>
                 <?php if($luminance > 170) { ?>
                 <div class="nav-right nav-menu is--dark">
@@ -35,10 +60,10 @@ get_template_part('templates/blog/header');
                 <div class="nav-right nav-menu">                
                 <?php } ?>
                   <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>                                          
-                <a class="nav-item nav-item__request" href="#" title="">Request A Demo</a></div>
-                <div class="toggleMenu" id="toggleMenu"><a class="toggleMenu--logo" href="#"><img class="blue--logo" src="<?php bloginfo('template_url') ?>/assets/blog/images/svg/blue-logo.svg" alt=""></a>
+                <a class="nav-item nav-item__request popup-open" title="">Request A Demo</a></div>
+                <div class="toggleMenu" id="toggleMenu"><a class="toggleMenu--logo" href="<?php bloginfo('url')?>/blog"><img class="blue--logo" src="<?php bloginfo('template_url') ?>/assets/blog/images/svg/blue-logo.svg" alt=""></a>
                   <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-                  <a class="req-a-demo" href="#">Request A Demo</a>
+                  <a class="req-a-demo popup-open">Request A Demo</a>
                 </div>
               </div>
             </div>
@@ -62,7 +87,7 @@ get_template_part('templates/blog/header');
                 <div class="container is-fluid is-marginless">
                   <div class="hero">
                     <div class="nav">
-                      <div class="nav-left"><a class="nav-item logo logo-light" href="#"><!-- or .logo-dark --><img class="blue--logo" src="<?php bloginfo('template_url') ?>/assets/blog/images/svg/blue-logo.svg" alt=""></a></div><span class="nav-toggle"><span></span><span></span><span></span></span>
+                      <div class="nav-left"><a class="nav-item logo logo-light" href="<?php bloginfo('url')?>/blog"><img class="blue--logo" src="<?php bloginfo('template_url') ?>/assets/blog/images/svg/blue-logo.svg" alt=""></a></div><span class="nav-toggle"><span></span><span></span><span></span></span>
                       <?php if($luminance > 170) { ?>
                       <div class="nav-right nav-menu is--dark">
                       <?php }else{ ?>
@@ -70,10 +95,10 @@ get_template_part('templates/blog/header');
                       <?php } ?>
                       <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>                        
                                             
-                      <a class="nav-item nav-item__request" href="#" title="">Request A Demo</a></div>
-                      <div class="toggleMenu" id="toggleMenu"><a class="toggleMenu--logo" href="#"><img class="blue--logo" src="<?php bloginfo('template_url') ?>/assets/blog/images/svg/blue-logo.svg" alt=""></a>
+                      <a class="nav-item nav-item__request popup-open" title="">Request A Demo</a></div>
+                      <div class="toggleMenu" id="toggleMenu"><a class="toggleMenu--logo" href="<?php bloginfo('url')?>/blog"><img class="blue--logo" src="<?php bloginfo('template_url') ?>/assets/blog/images/svg/blue-logo.svg" alt=""></a>
                       <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>                        
-                      <a class="req-a-demo" href="#">Request A Demo</a>
+                      <a class="req-a-demo popup-open">Request A Demo</a>
                       </div>
                     </div>
                   </div>
@@ -110,9 +135,38 @@ get_template_part('templates/blog/header');
         
           <div class="latest__item__shadow"></div>
           <div class="latest__item__img">
-            <?php the_post_thumbnail('blogSecond'); ?>            
+          <a href="<?php the_permalink()?>">
+                      <?php 
+                      if(has_post_thumbnail()){
+                        the_post_thumbnail('blog');
+                      }else {
+                        $img = get_template_directory_uri()."/assets/blog/images/bg/header.jpg";
+                      ?>
+                      <img src="<?= $img ?>"/>
+                      <?php } ?>  
+                    </a>          
           </div>
-          <div class="latest__item__category"><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></div>
+
+          <?php
+                      $colorList = [
+                        'case-studies' => '#151AE6',
+                        'research' => '#0F752B',
+                        'industry' => '#0BA1A5',
+                        'infectious-diseases' => '#ef0b0b',
+                        'hospital-culture' => '#0BA1A5',
+                        'ratings-recognition' => '#ff9100',
+                        'laws-Regulation' => '#225EDD',
+                        'hand-hygiene' => '#00d1b2',
+                        'regulations' => '#20cffb',
+                        'uncategorized' => '#225EDD'
+                      ];
+                      
+                      foreach((get_the_category()) as $category) {
+                      $catSlug = $category->slug;
+                      $catName = $category->cat_name;
+                      ?>
+            <div class="latest__item__category" style="color:<?= $colorList[$catSlug] ?>"><?= $catName ?></div>
+            <?php } ?>
           <p class="item__paragraph"><?php echo wp_trim_words( get_the_content(), 10 ) ?></p>
         </a>
           
