@@ -11,6 +11,8 @@ $intro_desc = $config['intro-desc'];
     elseif (is_page() ) { bloginfo('name'); echo ': '; single_post_title(); }
     else { wp_title('',true); } ?></title>
     <link rel='stylesheet' href='<?php bloginfo('template_url') ?>/assets/styles/font-awesome.min.css'>
+    <link rel='stylesheet' href='<?php bloginfo('template_url') ?>/assets/styles/owl.carousel.min.css'>
+    <link rel='stylesheet' href='<?php bloginfo('template_url') ?>/assets/styles/owl.theme.default.min.css'>
     <link rel='stylesheet' href='<?php bloginfo('stylesheet_url'); ?>'>
     <meta charset='utf-8'>
     <meta http-equiv="content-language" content="en">

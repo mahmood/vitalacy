@@ -31,7 +31,7 @@ $footer_logo = $config['footer-logo']['url'];
 
 <script src='<?php bloginfo('template_url') ?>/assets/scripts/libs.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src='<?php bloginfo('template_url') ?>/assets/scripts/slick.min.js'></script>
+<script src='<?php bloginfo('template_url') ?>/assets/scripts/owl.carousel.min.js'></script>
 <script src='<?php bloginfo('template_url') ?>/assets/scripts/main.js'></script>
 <script>
     (function (i, s, o, g, r, a, m) {

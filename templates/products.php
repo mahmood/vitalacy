@@ -5,8 +5,8 @@ $active = $config['product-is-active'];
 <?php if($active == true): ?>
 <section class='solution slide-0' id='solution'>
     <h1>Products</h1>
-    <div class="slide-products">
-        <div class="slide-products-item">
+    <div class="owl-carousel slide-products">
+        <div class="slide-products-item slide-01">
             <svg width="1180px" viewBox="0 0 1200 1006" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
@@ -365,93 +365,103 @@ $active = $config['product-is-active'];
             </svg>
         </div>
         <div class="slide-products-item centered band">
-            <h2>Vitalacy Wristbands</h2>
-            <p>
-                Outfit your healthcare organization with the ultimate symbol of utility and style - an intelligent
-                wristband that tells time, counts steps, and facilitates your efforts to save lives.
-            </p>
+            <div class="item-holder">
+                <h2>Vitalacy Wristbands</h2>
+                <p class="item-holder-text">
+                    Outfit your healthcare organization with the ultimate symbol of utility and style - an intelligent
+                    wristband that tells time, counts steps, and facilitates your efforts to save lives.
+                </p>
 
-            <img src='<?php bloginfo('template_url') ?>/assets/img/wristbands.jpg' width='884'>
+                <img src='<?php bloginfo('template_url') ?>/assets/img/wristbands.jpg' width='884' class="wristbands">
 
-            <div class='description'>
-                <figure>
-                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-bacteriablue.png' width='184'>
-                    <figcaption>Latex-free silicone band with silver ion impregnation for antibacterial effect.
-                    </figcaption>
-                </figure>
+                <div class='description'>
+                    <figure>
+                        <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-bacteriablue.png' width='184'>
+                        <figcaption>Latex-free silicone band with silver ion impregnation for antibacterial effect.
+                        </figcaption>
+                    </figure>
 
-                <figure>
-                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-wristbnd.png' width='184'>
-                    <figcaption>One size fits all design. Wear on the wrist or above elbow. Quick close clasp.
-                    </figcaption>
-                </figure>
+                    <figure>
+                        <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-wristbnd.png' width='184'>
+                        <figcaption>One size fits all design. Wear on the wrist or above elbow. Quick close clasp.
+                        </figcaption>
+                    </figure>
 
-                <figure>
-                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-connected.png' width='184'>
-                    <figcaption>Display shows time and battery level, gives wash feedback and vibration reminders.
-                    </figcaption>
-                </figure>
+                    <figure>
+                        <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide2-connected.png' width='184'>
+                        <figcaption>Display shows time and battery level, gives wash feedback and vibration reminders.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <br/>
+                <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
             </div>
-
-            <br/>
-            <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
         </div>
         <div class='slide-products-item centered location-beacon'>
-            <h2>Location Beacon</h2>
-            <p>
-                No matter how large or small your institution, location information is tracked and managed with accuracy
-                ensuring the availability of real-time reporting at your fingertips.
-            </p>
+            <div class="item-holder">
+                <h2>Location Beacon</h2>
+                <p class="item-holder-text">
+                    No matter how large or small your institution, location information is tracked and managed with accuracy
+                    ensuring the availability of real-time reporting at your fingertips.
+                </p>
 
-            <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide4-locationbeacon.jpg' width='944'>
+                <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide4-locationbeacon.jpg' width='944'>
 
-            <br/>
-            <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
+                <br/>
+                <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
+            </div>
         </div>
 
         <div class='slide-products-item centered dispenser'>
-            <h2>Dispenser Sensor</h2>
-            <p>
-                Every hand sanitizer and soap dispenser becomes a smart device equipped with a small sensor that
-                communicates the frequency of hand washes to Vitalacy devices.
-            </p>
+            <div class="item-holder">
+                <h2>Dispenser Sensor</h2>
+                <p class="item-holder-text">
+                    Every hand sanitizer and soap dispenser becomes a smart device equipped with a small sensor that
+                    communicates the frequency of hand washes to Vitalacy devices.
+                </p>
 
-            <div class='images'>
-                <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide3-dispensersensor.jpg' width='700'>
+                <div class='images'>
+                    <img src='<?php bloginfo('template_url') ?>/assets/img/solution-slide3-dispensersensor.jpg' width='700'>
+                </div>
+
+
+                <br/>
+                <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
             </div>
-
-
-            <br/>
-            <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
         </div>
 
         <div class='slide-products-item centered'>
-            <h2>Web Portal</h2>
-            <p>
-                Your web panel is available to enable individuals and management to track and oversee all compliance
-                activity. Data is available to view hospital-wide, unit-wide, or individual hand hygiene information
-                within specified time frames.
-            </p>
+            <div class="item-holder">
+                <h2>Web Portal</h2>
+                <p class="item-holder-text">
+                    Your web panel is available to enable individuals and management to track and oversee all compliance
+                    activity. Data is available to view hospital-wide, unit-wide, or individual hand hygiene information
+                    within specified time frames.
+                </p>
 
-            <img alt="webportal" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide5-webportal.jpg' width='680'>
+                <img class="webportal_img" alt="webportal" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide5-webportal.jpg' width='680'>
 
-            <br/>
-            <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
+                <br/>
+                <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
+            </div>
         </div>
 
 
         <div class='slide-products-item centered app'>
-            <h2>Mobile Reporting App</h2>
-            <p>
-                The mobile reporting app allows users to view their own hand hygiene progress at anytime. The app
-                includes a dashboard showing their daily, weekly, and monthly progress as well as leaderboards on both
-                individual and unit levels.
-            </p>
+            <div class="item-holder">
+                <h2>Mobile Reporting App</h2>
+                <p class="item-holder-text">
+                    The mobile reporting app allows users to view their own hand hygiene progress at anytime. The app
+                    includes a dashboard showing their daily, weekly, and monthly progress as well as leaderboards on both
+                    individual and unit levels.
+                </p>
 
-            <img alt="reportingapp" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide6-reportingapp.jpg' width='295'>
+                <img alt="reportingapp" src='<?php bloginfo('template_url') ?>/assets/img/solution-slide6-reportingapp.jpg' width='295'>
 
-            <br/>
-            <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
+                <br/>
+                <a href='#demo' data-popup='demop' class='btn'>Request Demo</a>
+            </div>
         </div>
     </div>
 

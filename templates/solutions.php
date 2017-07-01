@@ -5,7 +5,7 @@ $active = $config['solutions-is-active'];
 <?php if($active == true): ?>
 <section class='options' id='packages'>
     <h1>Solutions</h1>
-    <div class="slide-options">
+    <div class="owl-carousel slide-options">
         <div class="slide-options-item package-1">
             <h4>Package 1: Dispenser Management</h4>
             <p>

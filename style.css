@@ -656,27 +656,57 @@ header nav a:hover {
   font-size: 19px;
   letter-spacing: 1.3px;
 }
-.problem .slide.slide.slide {
+/*.problem .slide.slide.slide {
   display: flex;
   flex-direction: row;
   width: 100%;
   max-width: 1170px;
-}
-.problem .slide-problem {
-  position: relative;
-  width: 100%;
-  /*overflow: hidden !important;*/
+}*/
+.problem .owl-carousel {
   cursor: grab;
-  top: 0rem;
 }
-.problem .slide-problem .slide-problem-item {
+.problem .owl-carousel.slide-problem .slide-problem-item .stats-left {
+  width: 54%;
+}
+.problem .owl-carousel.slide-problem .slide-problem-item .stats-left p:first-of-type {
+  line-height: 6rem;
+}
+.problem .owl-carousel.slide-problem .slide-problem-item .stats-left img {
+  vertical-align: bottom;
+}
+.problem .owl-carousel.slide-problem .slide-problem-item .stats-right {
+  width: 45%;
+  border-left: 1px solid #999999;
+}
+.problem .owl-carousel.slide-problem .slide-problem-item .stats-right p:first-of-type {
+  order: 0;
+  margin-left: 2rem;
+}
+.problem .owl-carousel.slide-problem .slide-problem-item .stats-right img {
+  max-width: 90%;
+  vertical-align: middle;
+  margin: 1rem 3rem;
+  order: 2;
+}
+.problem .owl-carousel.slide-problem .slide-problem-item .stats-right p.year {
   display: inline-block;
-  overflow: hidden;
+  color: #FF4E64;
+  font-size: 40px;
+  font-family: Avenir Next;
+  font-weight: bold;
+  margin: auto;
+  margin-left: 10%;
+  order: 2;
 }
-.problem .slick-list {
-  overflow: hidden;
+.problem .owl-carousel.slide-problem .slide-problem-item .stats-right::before {
+  content: '';
+  order: 1;
+  width: 100%;
 }
-.problem .slick-prev, .slick-next {
+.problem .owl-carousel.slide-problem .slide-problem-item .stats-left .red-img {
+  width: 95%;
+}
+.problem .owl-carousel .owl-nav .owl-prev, .problem .owl-carousel .owl-nav .owl-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -686,38 +716,33 @@ header nav a:hover {
   height: 40px;
   cursor: pointer;
 }
-.problem .slick-next {
+.problem .owl-next  {
   right: -5rem;
 }
-.problem .slick-prev {
+.problem .owl-prev {
   left: -5rem;
 }
-.problem .slick-prev .prevIcon {
-  display: block;
-  position: relative;
-  outline: none;
-}
-.problem .slick-prev .prevIcon::before {
+.problem .owl-prev::before {
   content: '';
   position: absolute;
   width: 20px;
   height: 3px;
   left: 0;
-  top: -8px;
+  top: 12px;
   background-color: #333;
   transform: rotate(-45deg);
 }
-.problem .slick-prev .prevIcon::after {
+.problem .owl-prev::after {
   content: '';
   position: absolute;
   width: 20px;
   height: 3px;
   left: 0;
-  top: 5px;
+  top: 25px;
   background-color: #333;
   transform: rotate(45deg);
 }
-.problem .slick-next .nextIcon::before {
+.problem .owl-next::before {
   content: '';
   position: absolute;
   width: 20px;
@@ -727,7 +752,7 @@ header nav a:hover {
   background-color: #333;
   transform: rotate(45deg);
 }
-.problem .slick-next .nextIcon::after {
+.problem .owl-next::after {
   content: '';
   position: absolute;
   width: 20px;
@@ -737,106 +762,29 @@ header nav a:hover {
   background-color: #333;
   transform: rotate(-45deg);
 }
-/* Dots */
-.problem .slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
+/* Problem dots */
+.problem .owl-dots {
+  display: block;
+  position: relative;
+  bottom: -3rem;
+  text-align: center;
+  margin: 0;
+  width: 100%;
 }
-
-.problem .slick-dots
-{
-    position: relative;
-    bottom: -4rem;
-
-    display: block;
-
-    width: 100%;
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
-
-    text-align: center;
+.problem .owl-dots .owl-dot {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #cccccc;
 }
-.problem .slick-dots li
-{
-    position: relative;
-
-    display: inline-block;
-
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-
-    cursor: pointer;
-}
-.problem .slick-dots li button
-{
-    font-size: 0;
-    line-height: 0;
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-
-    cursor: pointer;
-
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-.problem .slick-dots li button:hover,
-.problem .slick-dots li button:focus
-{
-    outline: none;
-}
-.problem .slick-dots li button:hover:before,
-.problem .slick-dots li button:focus:before
-{
-    opacity: 1;
-}
-.problem .slick-dots li button:before
-{
-    font-family: 'slick';
-    /*font-size: 60px;*/
-    line-height: 20px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 15px;
-    height: 15px;
-
-    content: '';
-    text-align: center;
-
-    color: #FFFFFF;
-    border: 1px solid #cccccc;
-    border-radius: 20px;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.problem .slick-dots li.slick-active button:before
-{
-    /*opacity: .75;*/
-    background: #cccccc;
-}
-.problem .slide.slide.slide > :last-of-type {
-  padding-left: 5rem;
-  margin-left: 5rem;
-}
-@media (max-width: 1040px) {
-  .problem .slide.slide.slide > :last-of-type {
-    border: none;
-    margin-left: auto;
-    padding-left: 0;
-  }
+.problem .owl-dots .owl-dot.active {
+  background: #cccccc;
 }
 .problem .item-holder {
   display: flex;
@@ -849,48 +797,6 @@ header nav a:hover {
   -ms-user-select: none;
   user-select: none;
   /*top: -10rem;*/
-}
-.problem .stats-left {
-  /*display: inline-block;*/
-  width: 54%;
-}
-.problem .stats-left p:first-of-type {
-  line-height: 6rem;
-}
-.problem .stats-left img {
-  vertical-align: bottom;
-}
-.problem .stats-right {
-  width: 45%;
-  border-left: 1px solid #999999;
-}
-.problem .stats-right p:first-of-type {
-  order: 0;
-  margin-left: 2rem;
-}
-.problem .stats-right img {
-  max-width: 90%;
-  vertical-align: middle;
-  margin: 1rem 3rem;
-  order: 2;
-}
-.problem .stats-right p.year {
-  display: inline-block;
-  color: #FF4E64;
-  font-size: 40px;
-  font-family: Avenir Next;
-  font-weight: bold;
-  margin: auto;
-  margin-left: 10%;
-  order: 2;
-}
-.problem .stats-right::before {
-  content: '';
-  order: 1;
-  width: 100%;
-}
-.problem .stats-left .red-img {
-  width: 95%;
 }
 @media (max-width: 1040px) {
   .problem .stats-left,
@@ -970,6 +876,11 @@ header nav a:hover {
     padding: 5rem 5rem 5rem;
   }
 }
+@media (max-width: 768px) {
+  .problem .owl-carousel.slide-problem .slide-problem-item .stats-left {
+    width: 80%;
+  }
+}
 .options {
   padding: 5rem 10rem;
   border-top: 1px solid #f2f2f2;
@@ -978,23 +889,7 @@ header nav a:hover {
 .options h1 {
   color: #489eff !important;
 }
-.options .slide-options .slide-options-item {
-  display: inline-block;
-  overflow: hidden;
-}
-.options .slick-list {
-  overflow: hidden;
-  cursor: grab;
-}
-.options .slide-options .slide-options-item.package-1 {
-  position: relative;
-  top: -18rem;
-}
-.options .slide-options .slide-options-item.package-2 {
-  position: relative;
-  top: -12rem;
-}
-.options .slick-prev, .slick-next {
+.options .owl-nav .owl-prev, .options .owl-nav .owl-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1004,38 +899,33 @@ header nav a:hover {
   height: 40px;
   cursor: pointer;
 }
-.options .slick-next {
+.options .owl-next  {
   right: -5rem;
 }
-.options .slick-prev {
+.options .owl-prev {
   left: -5rem;
 }
-.options .slick-prev .prevIcon {
-  display: block;
-  position: relative;
-  outline: none;
-}
-.options .slick-prev .prevIcon::before {
+.options .owl-prev::before {
   content: '';
   position: absolute;
   width: 20px;
   height: 3px;
   left: 0;
-  top: -8px;
+  top: 12px;
   background-color: #333;
   transform: rotate(-45deg);
 }
-.options .slick-prev .prevIcon::after {
+.options .owl-prev::after {
   content: '';
   position: absolute;
   width: 20px;
   height: 3px;
   left: 0;
-  top: 5px;
+  top: 25px;
   background-color: #333;
   transform: rotate(45deg);
 }
-.options .slick-next .nextIcon::before {
+.options .owl-next::before {
   content: '';
   position: absolute;
   width: 20px;
@@ -1045,7 +935,7 @@ header nav a:hover {
   background-color: #333;
   transform: rotate(45deg);
 }
-.options .slick-next .nextIcon::after {
+.options .owl-next::after {
   content: '';
   position: absolute;
   width: 20px;
@@ -1055,95 +945,32 @@ header nav a:hover {
   background-color: #333;
   transform: rotate(-45deg);
 }
-/* Dots */
-.options .slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
+/* options dots */
+.options .owl-dots {
+  display: block;
+  position: relative;
+  bottom: -3rem;
+  text-align: center;
+  margin: 0;
+  width: 100%;
 }
-
-.options .slick-dots
-{
-    position: relative;
-    bottom: -4rem;
-
-    display: block;
-
-    width: 100%;
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
-
-    text-align: center;
+.options .owl-dots .owl-dot {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #cccccc;
 }
-.options .slick-dots li
-{
-    position: relative;
-
-    display: inline-block;
-
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-
-    cursor: pointer;
+.options .owl-dots .owl-dot.active {
+  background: #cccccc;
 }
-.options .slick-dots li button
-{
-    font-size: 0;
-    line-height: 0;
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-
-    cursor: pointer;
-
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-.options .slick-dots li button:hover,
-.options .slick-dots li button:focus
-{
-    outline: none;
-}
-.options .slick-dots li button:hover:before,
-.options .slick-dots li button:focus:before
-{
-    opacity: 1;
-}
-.options .slick-dots li button:before
-{
-    font-family: 'slick';
-    /*font-size: 60px;*/
-    line-height: 20px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 15px;
-    height: 15px;
-
-    content: '';
-    text-align: center;
-
-    color: #FFFFFF;
-    border: 1px solid #cccccc;
-    border-radius: 20px;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.options .slick-dots li.slick-active button:before
-{
-    /*opacity: .75;*/
-    background: #cccccc;
+.options .slide-options {
+  cursor: grab;
 }
 .options .slide-options .slide-options-item {
   text-align: center;
@@ -1218,6 +1045,15 @@ header nav a:hover {
                       0 0 0 0px transparent inset;
   transition: box-shadow 0.5s ease;
 }
+@media (max-width: 568px) {
+  .options .slide-options .slide-options-item .includes img {
+    max-width: 40%;
+  }
+  .options .slide-options .slide-options-item .includes .items {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
 .options .slide-options .slide-options-item .includes img:hover {
   /*box-shadow: 0 0 0 2px @blue,*/
   /*0 0 0 2px @blue inset;*/
@@ -1241,6 +1077,11 @@ header nav a:hover {
 .options .slide-options .slide-options-item .btn {
   margin-top: 3rem;
 }
+@media (max-width: 568px) {
+  .options .slide-options .slide-options-item .btn {
+    min-width: 20rem;
+  }
+}
 @media (max-width: 1040px) {
   .options .slide-options .images > img {
     display: none;
@@ -1252,6 +1093,17 @@ header nav a:hover {
 @media (max-width: 1040px) {
   .options {
     padding: 5rem 2rem;
+  }
+  .owl-prev {
+    left: 0 !important;
+  }
+  .owl-next {
+    right: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .options .slide-options .slide-options-item p {
+    max-width: 70%;
   }
 }
 .demo {
@@ -1786,167 +1638,19 @@ footer .social a:hover {
 .solution .slide-products {
   position: relative;
   width: 100%;
-  /*overflow: hidden !important;*/
   cursor: grab;
   top: 0rem;
 }
-.solution .slide-products .slide-products-item {
-  display: inline-block;
-  overflow: hidden;
-}
-.solution .slick-list {
-  overflow: hidden;
-}
-.solution .slick-prev, .slick-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 0;
-  background: transparent;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-.solution .slick-next {
-  right: -5rem;
-}
-.solution .slick-prev {
-  left: -5rem;
-}
-.solution .slick-prev .prevIcon {
-  display: block;
+.solution .slide-products-item.band .wristbands {
+  max-width: 30% !important;
   position: relative;
-  outline: none;
 }
-.solution .slick-prev .prevIcon::before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 3px;
-  left: 0;
-  top: -8px;
-  background-color: #333;
-  transform: rotate(-45deg);
-}
-.solution .slick-prev .prevIcon::after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 3px;
-  left: 0;
-  top: 5px;
-  background-color: #333;
-  transform: rotate(45deg);
-}
-.solution .slick-next .nextIcon::before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 3px;
-  right: 7px;
-  top: 12px;
-  background-color: #333;
-  transform: rotate(45deg);
-}
-.solution .slick-next .nextIcon::after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 3px;
-  right: 7px;
-  top: 25px;
-  background-color: #333;
-  transform: rotate(-45deg);
-}
-/* Dots */
-.solution .slick-dotted.slick-slider
-{
-    margin-bottom: 30px;
-}
-
-.solution .slick-dots
-{
-    position: relative;
-    bottom: -4rem;
-
-    display: block;
-
-    width: 100%;
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
-
-    text-align: center;
-}
-.solution .slick-dots li
-{
-    position: relative;
-
-    display: inline-block;
-
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-
-    cursor: pointer;
-}
-.solution .slick-dots li button
-{
-    font-size: 0;
-    line-height: 0;
-
-    display: block;
-
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-
-    cursor: pointer;
-
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
-.solution .slick-dots li button:hover,
-.solution .slick-dots li button:focus
-{
-    outline: none;
-}
-.solution .slick-dots li button:hover:before,
-.solution .slick-dots li button:focus:before
-{
-    opacity: 1;
-}
-.solution .slick-dots li button:before
-{
-    font-family: 'slick';
-    /*font-size: 60px;*/
-    line-height: 20px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 15px;
-    height: 15px;
-
-    content: '';
-    text-align: center;
-
-    color: #FFFFFF;
-    border: 1px solid #cccccc;
-    border-radius: 20px;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.solution .slick-dots li.slick-active button:before
-{
-    /*opacity: .75;*/
-    background: #cccccc;
+.solution .slide-products-item .item-holder .item-holder-text {
+  position: relative;
+  max-width: 50%;
+  margin: 4rem auto;
+  text-align: center;
+  color: #7c7c7c;
 }
 .solution svg text,
 .solution svg tspan {
@@ -1962,12 +1666,12 @@ footer .social a:hover {
   background: #b3d7ff;
   color: white;
 }
-.solution.slide-0 .slick-dots li button:before {
+.solution.slide-0 .owl-dots .owl-dot {
   background: white;
   border: 1px solid #489eff;
   opacity: 1;
 }
-.solution.slide-0 .slick-dots li.slick-active button:before {
+.solution.slide-0 .owl-dots .owl-dot.active {
   background: #489eff;
 }
 .solution .slide-products-item svg {
@@ -1979,6 +1683,7 @@ footer .social a:hover {
   text-align: center;
 }
 .solution .slide-products-item.centered h2 {
+  display: block;
   font-family: Avenir Next;
   font-weight: normal;
   text-transform: none;
@@ -1990,6 +1695,11 @@ footer .social a:hover {
 }
 .solution .slide-products-item.centered a.btn {
   margin-top: 2rem;
+}
+@media (max-width: 568px) {
+  .solution .slide-products-item.centered a.btn {
+    min-width: 20rem;
+  }
 }
 .solution .slide-products-item.centered .images {
   display: flex;
@@ -2017,10 +1727,23 @@ footer .social a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
+  top: 4rem;
 }
 @media (max-width: 1040px) {
   .solution .slide-products-item.centered.band .description {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .solution .slide-products-item.dispenser .images img, .solution .slide-products-item .webportal_img {
+    max-width: 70%;
+  }
+  .solution .slide-products-item.app img {
+    max-width: 30% !important;
+  }
+  .solution .slide-products-item .item-holder .item-holder-text {
+    max-width: 75%;
   }
 }
 .solution .slide-products-item.centered.band .description figure {
@@ -2037,6 +1760,86 @@ footer .social a:hover {
   .solution {
     padding: 5rem 2rem;
   }
+}
+.solution .owl-nav .owl-prev, .solution .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.solution .owl-next  {
+  right: -5rem;
+}
+.solution .owl-prev {
+  left: -5rem;
+}
+.solution .owl-prev::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  left: 0;
+  top: 12px;
+  background-color: #333;
+  transform: rotate(-45deg);
+}
+.solution .owl-prev::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  left: 0;
+  top: 25px;
+  background-color: #333;
+  transform: rotate(45deg);
+}
+.solution .owl-next::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  right: 7px;
+  top: 12px;
+  background-color: #333;
+  transform: rotate(45deg);
+}
+.solution .owl-next::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  right: 7px;
+  top: 25px;
+  background-color: #333;
+  transform: rotate(-45deg);
+}
+/* solution dots */
+.solution .owl-dots {
+  display: block;
+  position: relative;
+  bottom: -3rem;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+.solution .owl-dots .owl-dot {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #cccccc;
+}
+.solution .owl-dots .owl-dot.active {
+  background: #cccccc;
 }
 .is-tablet .solution.slide-0 {
   /*background: white;
