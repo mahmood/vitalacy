@@ -1979,7 +1979,7 @@ body > * {
   width: 100%;
 }
 body.no-scroll {
-  overflow: hidden !important;
+  overflow-x: hidden !important;
   height: 100%;
 }
 * {

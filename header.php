@@ -23,7 +23,7 @@ $intro_desc = $config['intro-desc'];
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
 </head>
-<body>
+<body class="no-scroll">
 
 <header>
     <a href='#menu' class='tablet menu'></a>
