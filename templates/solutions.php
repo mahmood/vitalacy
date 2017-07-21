@@ -35,6 +35,7 @@ $active = $config['solutions-is-active'];
             </div>
 
             <a href='#pricing' class='btn' data-popup='pricep'>Request Pricing</a>
+            <p>Want to learn more? <a href="http://vitalacy.com/2017-Vitalacy-Brochure.pdf" class="brochure">Get our info brochure (PDF)</a></p>
         </div>
         <div class="slide-options-item package-2">
             <h4>Package 2: Advanced Reporting System</h4>
@@ -77,6 +78,7 @@ $active = $config['solutions-is-active'];
             </div>
 
             <a href='#pricing' class='btn' data-popup='pricep'>Request Pricing</a>
+            <p>Want to learn more? <a href="http://vitalacy.com/2017-Vitalacy-Brochure.pdf" class="brochure">Get our info brochure (PDF)</a></p>
         </div>
         <div class="slide-options-item package-3">
             <h4>Package 3: Comprehensive Safety Network</h4>
@@ -126,6 +128,7 @@ $active = $config['solutions-is-active'];
             </div>
 
             <a href='#pricing' class='btn' data-popup='pricep'>Request Pricing</a>
+            <p>Want to learn more? <a href="http://vitalacy.com/2017-Vitalacy-Brochure.pdf" class="brochure">Get our info brochure (PDF)</a></p>
         </div>
     </div>
     

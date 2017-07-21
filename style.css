@@ -889,6 +889,10 @@ header nav a:hover {
 .options h1 {
   color: #489eff !important;
 }
+.options .brochure {
+  color: #2374FC;
+  font-weight: 500;
+}
 .options .owl-nav .owl-prev, .options .owl-nav .owl-next {
   position: absolute;
   top: 50%;
@@ -1977,6 +1981,9 @@ body {
 }
 body > * {
   width: 100%;
+}
+body.not-have-scroll {
+  overflow-x: hidden !important;
 }
 body.no-scroll {
   overflow-x: hidden !important;

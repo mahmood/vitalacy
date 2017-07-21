@@ -23,7 +23,7 @@ $intro_desc = $config['intro-desc'];
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
 </head>
-<body class="no-scroll">
+<body class="not-have-scroll">
 
 <header>
     <a href='#menu' class='tablet menu'></a>
@@ -39,7 +39,7 @@ $intro_desc = $config['intro-desc'];
     </a>
 
     <nav>
-        <a href='#solution'>Products</a>
+        <a href="#solution">Products</a>
         <a href='#packages'>Solutions</a>
         <a href='<?php bloginfo('url') ?>/blog'>Blog</a>
         <a href='#about'>About</a>
